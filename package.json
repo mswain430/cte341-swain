@@ -1,0 +1,28 @@
+{
+  "name": "cse341-swain",
+  "version": "1.0.0",
+  "description": "cse341 first assignment",
+  "master": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswain430/cte341-swain.git"
+  },
+  "author": "Millie Swain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mswain430/cte341-swain/issues"
+  },
+  "homepage":  "https://github.com/mswain430/cte341-swain#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
