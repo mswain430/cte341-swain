@@ -4,17 +4,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev_start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswain430/cte341-swain.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-     "url": "https:"
+    "url": "https://github.com/mswain430/cte341-swain/l01_personal/issues"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "expresss": "^0.0.0",
-    "nodemon": "^2.0.22"
+    "expresss": "^0.0.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
 }
