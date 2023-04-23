@@ -2,11 +2,11 @@
   "name": "cse341-swain",
   "version": "1.0.0",
   "description": "cse341 first assignment",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "devStart": "nodemon server.js"
+    "start": "nodemon app.js",
+    "devStart": "nodemon app.js"
   },
   "repository": {
     "type": "git",
