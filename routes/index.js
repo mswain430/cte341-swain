@@ -1,9 +1,6 @@
-const routes = require('express').Router();
-//const jokes = require('../controllers');
+const express = require('express');
+const router = express.Router();
 
-routes.get('/', (req, res) => {
-    res.send('Rhoda Ready');
-});
-//routes.get('/', jokes.displayJoke);
+router.use('/contacts', require('./contacts'))
 
-module.exports = routes;
+module.exports = router;
