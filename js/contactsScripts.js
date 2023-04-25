@@ -11,54 +11,38 @@ async function apiFetch(url) {
   };
   
   function displayAllData(data) {
-    displayContactsName(data.firstName);
-    displayImage(data.base64Image);
-    displayPrimaryDescription(data);
-    displayWorkDescription(data);
-    displayLinkTitleText(data);
-    displayLinkedInLink(data);
-    displayGitHubLink(data);
+    displayContactsfName(data.firstName);
+    displayContactslName(data.lastName);
+    displayfavoriteColor(data);
+    displayContactsBirthday(data);
+    displayContactsEmail(data);
+ //   displayContactsEmailLink(data);
+
   }
   
-  function displayContactsName(n) {
-    let contactsName = document.getElementById('contactsName');
-    professionalName.innerHTML = n;
+  function displayContactsfName(data) {
+    let contactsfName = document.getElementById('contactsfName');
+    contactsfName.innerHTML = data;
+  }
+  function displayContactslName(data) {
+    let contactslName = document.getElementById('contactslName');
+    contactslName.innerHTML = data;
   }
   
- * function displayImage(img) {
-    let image = document.getElementById('professionalImage');
-    image.src = `data:image/png;base64, ${img}`;
-  }
-  function displayPrimaryDescription(data) {
-    let nameLink = document.getElementById('nameLink');
-    nameLink.innerHTML = data.nameLink.firstName;
-    nameLink.href = data.nameLink.url;
-    let primaryDescription = document.getElementById('primaryDescription');
-    primaryDescription.innerHTML = data.primaryDescription;
+ /* function displayContactsEmail(data) {
+    let emailLink = document.getElementById('emailLink');
+    emailLink.innerHTML = data.emailLink.text;
+    emailLink.href = data.emailLink.link;
   } */
-  
-  function displayWorkDescription(data) {
-    let workDescription1 = document.getElementById('workDescription1');
-    workDescription1.innerHTML = data.workDescription1;
-    let workDescription2 = document.getElementById('workDescription2');
-    workDescription2.innerHTML = data.workDescription2;
+
+  function displayContactsfavoriteColor(data) {
+    let contactsfavoriteColor = document.getElementById('contactsfavoriteColor');
+    contactsfavoriteColor.innerHTML = data;
+  }
+  function displayContactsBirthday(data) {
+    let contactsBirthday = document.getElementById('contactsBirthday');
+    contactsBirthday.innerHTML = data;
   }
   
-  function displayLinkTitleText(data) {
-    let linkTitle = document.getElementById('linkTitleText');
-    linkTitle.innerHTML = data.linkTitleText;
-  }
-  
-  function displayLinkedInLink(data) {
-    let linkedInLink = document.getElementById('linkedInLink');
-    linkedInLink.innerHTML = data.linkedInLink.text;
-    linkedInLink.href = data.linkedInLink.link;
-  }
-  
-  function displayGitHubLink(data) {
-    let githubLink = document.getElementById('githubLink');
-    githubLink.innerHTML = data.githubLink.text;
-    githubLink.href = data.githubLink.link;
-  }
-  
+
   getData();
