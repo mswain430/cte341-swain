@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('../db/connect');
-const ObjectId = require('mongodb').ObjectId;const mongodb = require('../db/connect');
+const ObjectId = require('mongodb').ObjectId;
 
 const getData = async(req, res, next) => {
     const result = await mongodb.getDb().db().collection('users').find();
