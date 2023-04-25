@@ -1,4 +1,6 @@
 ### 
+GET http://localhost:8080/professional
+
 GET http://localhost:8080/contacts 
 ### 
 GET http://localhost:8080/contacts/6444b20e9077742ed52f7c7b 
@@ -11,8 +13,12 @@ GET http://localhost:8080/contacts/6444b2d69077742ed52f7c7e
 
 // PRODUCTION Deploy 
 ### 
-GET https://swain341-test.onrender.com/contacts 
+GET https://swain341-test.onrender.com
 ### 
+GET https://swain341-test.onrender.com/test.professional
+
+GET https://swain341-test.onrender.com/test.contacts
+
 GET https://swain341-test.onrender.com/contacts/6444b2d69077742ed52f7c7b 
 ### 
 GET https://swain341-test.onrender.com/contacts/6444b2d69077742ed52f7c7c 
