@@ -22,30 +22,30 @@ async function apiFetch(url) {
   }
   
   function displayContactsfName(data) {
-    let contactsfName = document.getElementById('contactsfName');
-    contactsfName.innerHTML = data;
+    let firstName = document.getElementById('firstName');
+    firstName.innerHTML = data;
   }
   function displayContactslName(data) {
-    let contactslName = document.getElementById('contactslName');
-    contactslName.innerHTML = data;
+    let lastName = document.getElementById('lastName');
+    lastName.innerHTML = data;
   }
   function displayContactsEmailTitleText(data) {
-    let contactsEmailTitletext = document.getElementById('contactsEmailTitleText');
-    contactsEmailTitletext.innerHTML = data;
+    let emailTitletext = document.getElementById('emailTitleText');
+    emailTitletext.innerHTML = data;
   }
   function displayContactsEmail(data) {
-    let emailLink = document.getElementById('emailLink');
-    emailLink.innerHTML = data.emailLink.text;
-    emailLink.href = data.emailLink.link;
+    let email = document.getElementById('email');
+    email.innerHTML = data.email.text;
+    email.href = data.email.link;
   } 
 
   function displayContactsfavoriteColor(data) {
-    let contactsfavoriteColor = document.getElementById('contactsfavoriteColor');
-    contactsfavoriteColor.innerHTML = data;
+    let favoriteColor = document.getElementById('favoriteColor');
+    favoriteColor.innerHTML = data;
   }
   function displayContactsBirthday(data) {
-    let contactsBirthday = document.getElementById('contactsBirthday');
-    contactsBirthday.innerHTML = data;
+    let birthday = document.getElementById('birthday');
+    birthday.innerHTML = data;
   }
   
   getData();
