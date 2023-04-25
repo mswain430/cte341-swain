@@ -16,6 +16,7 @@ async function apiFetch(url) {
     displayfavoriteColor(data);
     displayContactsBirthday(data);
     displayContactsEmail(data);
+    displayContactsEmailTitleText(data);
  //   displayContactsEmailLink(data);
 
   }
@@ -28,12 +29,15 @@ async function apiFetch(url) {
     let contactslName = document.getElementById('contactslName');
     contactslName.innerHTML = data;
   }
-  
- /* function displayContactsEmail(data) {
+  function displayContactsEmailTitleText(data) {
+    let emailTitletext = document.getElementById('emailTitleText');
+    emailTitleText.innerHTML = data;
+  }
+  function displayContactsEmail(data) {
     let emailLink = document.getElementById('emailLink');
     emailLink.innerHTML = data.emailLink.text;
     emailLink.href = data.emailLink.link;
-  } */
+  } 
 
   function displayContactsfavoriteColor(data) {
     let contactsfavoriteColor = document.getElementById('contactsfavoriteColor');

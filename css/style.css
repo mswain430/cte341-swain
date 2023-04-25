@@ -73,7 +73,7 @@ body {
   body {
     font-size: 1em;
   }
-  .proName {
+  .conName {
     float: left;
     margin-bottom: 20px;
   }
@@ -92,7 +92,6 @@ body {
     margin-top: 30px;
     width: 0px;
     height: 0px;
-  
     position: relative;
     -webkit-perspective: 1200px;
     -webkit-perspective-origin: 50% 50%;
