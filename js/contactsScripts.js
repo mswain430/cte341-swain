@@ -35,7 +35,7 @@ async function apiFetch(url) {
   }
   function displayContactsEmail(data) {
     let email = document.getElementById('email');
-    email.innerHTML = data.email.text;
+    email.innerHTML = data.email.url;
     email.href = data.email.link;
   } 
 
