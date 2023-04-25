@@ -13,7 +13,7 @@ async function apiFetch(url) {
   function displayAllData(data) {
     displayContactsfName(data.firstName);
     displayContactslName(data.lastName);
-    displayfavoriteColor(data);
+    displayContactsfavoriteColor(data);
     displayContactsBirthday(data);
     displayContactsEmail(data);
     displayContactsEmailTitleText(data);
