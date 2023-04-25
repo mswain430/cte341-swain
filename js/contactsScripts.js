@@ -17,7 +17,7 @@ async function apiFetch(url) {
     displayContactsBirthday(data);
     displayContactsEmail(data);
     displayContactsEmailTitleText(data);
- //   displayContactsEmailLink(data);
+ // displayContactsEmailLink(data);
 
   }
   
