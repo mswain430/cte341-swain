@@ -30,8 +30,8 @@ async function apiFetch(url) {
     contactslName.innerHTML = data;
   }
   function displayContactsEmailTitleText(data) {
-    let emailTitletext = document.getElementById('emailTitleText');
-    emailTitleText.innerHTML = data;
+    let contactsEmailTitletext = document.getElementById('contactsEmailTitleText');
+    contactsEmailTitletext.innerHTML = data;
   }
   function displayContactsEmail(data) {
     let emailLink = document.getElementById('emailLink');
@@ -48,5 +48,4 @@ async function apiFetch(url) {
     contactsBirthday.innerHTML = data;
   }
   
-
   getData();
