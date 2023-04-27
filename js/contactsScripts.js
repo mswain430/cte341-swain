@@ -1,9 +1,9 @@
 // helpful link for converting image to base64: https://elmah.io/tools/base64-image-encoder/
-async function apiFetch(url) {
-    const response = await fetch(url);
-    const data = await response.json();
-    return data;
-  }
+async function apiFetch(email) {
+  const response = await fetch(email);
+  const data = await response.json();
+  return data;
+}
   
   const getData = async () => {
     const data = await apiFetch('http://localhost:8080/contacts');
@@ -15,7 +15,6 @@ async function apiFetch(url) {
     displayContactslName(data.lastName);
     displayContactsfavoriteColor(data);
     displayContactsBirthday(data);
-    displayContactsEmail(data);
     displayContactsEmailTitleText(data);
  // displayContactsEmailLink(data);
 
@@ -29,14 +28,15 @@ async function apiFetch(url) {
     let lastName = document.getElementById('lastName');
     lastName.innerHTML = data;
   }
-  function displayContactsEmailTitleText(data) {
-    let emailTitletext = document.getElementById('emailTitleText');
-    emailTitletext.innerHTML = data;
+
+  function displayContactslEmailTitleText(data) {
+    let emailTitleText = document.getElementById('emailTitleText');
+    emailTitleText.innerHTML = data;
   }
-  function displayContactsEmail(data) {
-    let email = document.getElementById('email');
-    email.innerHTML = data.email.url;
-    email.href = data.email.link;
+  function displayContactsEmailLink(data) {
+    let emailLink = document.getElementById('emailLink');
+  emailLink.innerHTML = data.email.text;
+    emailLink.href = data.emailLink.link;
   } 
 
   function displayContactsfavoriteColor(data) {
