@@ -20,8 +20,27 @@ const getSingle = async (req, res, next) => {
     .find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
-    res.status(200).json(lists);
+    res.status(200).json(lists[0]);
   });
 };
 
-module.exports = { getAll, getSingle };
+
+const createContact = async(req, res) => {
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birdthday: req.body.birthday
+  };
+  const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
+  if(response.acknowledged) {
+    res.status(201).json(response);
+  }else {
+    res.status(500).json(response.error || 'Some error occurred while creating contact');
+  }
+};
+
+
+
+module.exports = { getAll, getSingle, createContact };

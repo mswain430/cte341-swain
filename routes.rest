@@ -26,14 +26,14 @@ GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e0
 ### 
 GET https://swain341-test.onrender.com
 ### 
-//GET https://swain341-test.onrender.com/professional
+GET https://swain341-test.onrender.com/professional
 
-//GET https://swain341-test.onrender.com/contacts
+GET https://swain341-test.onrender.com/contacts
 
-//GET https://swain342-test.onrender.com/contacts/64473cf593c8ccb1f0dd16e0
+GET https://swain342-test.onrender.com/contacts/64473cf593c8ccb1f0dd16e0
 ### 
-//GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e1 
+GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e1 
 ### 
-//GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e2
+GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e2
 ### 
-//GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e3
+GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e3

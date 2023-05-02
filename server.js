@@ -10,6 +10,7 @@ app.listen(port, () => {
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 const contactsRoutes = require('./routes');
@@ -19,6 +20,7 @@ const app = express();
 
 app
   .use(bodyParser.json())
+  .use(cors())
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
