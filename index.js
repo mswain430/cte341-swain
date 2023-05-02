@@ -1,4 +1,3 @@
-// console.log('Rhoda Ready')
 var express = require("express");
 var app = express();
 
@@ -12,3 +11,4 @@ function getData(req, res) {
 }
 
 app.listen(app.get("port"), () => console.log("server is listening on port " + app.get("port")));
+
