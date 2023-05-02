@@ -13,10 +13,10 @@ async function apiFetch(email) {
   function displayAllData(data) {
     displayContactsfName(data.firstName);
     displayContactslName(data.lastName);
-    displayContactsfavoriteColor(data);
-    displayContactsBirthday(data);
-    displayContactsEmailTitleText(data);
-    displayContactsEmailLink(data);
+    displayContactsfavoriteColor(data.favoriteColor);
+    displayContactsBirthday(data.birthday);
+   // displayContactsEmailTitleText(data);
+    displayContactsEmailLink(data.email);
 
   }
   
@@ -29,10 +29,10 @@ async function apiFetch(email) {
     lastName.innerHTML = data;
   }
 
-  function displayContactsEmailTitleText(data) {
+  /*function displayContactsEmailTitleText(data) {
     let emailTitleText = document.getElementById('emailTitleText');
-    emailTitleText.innerHTML = data;
-  }
+    emailTitleText.innerHTML = 'Email';
+  } */
   function displayContactsEmailLink(data) {
     let emailLink = document.getElementById('emailLink');
     emailLink.innerHTML = data.email.text;
