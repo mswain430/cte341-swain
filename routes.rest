@@ -39,13 +39,13 @@ content-type: application/json
 "firstName":"Samantha", 
 "lastName":"Buchard", 
 "email":"test@gmail.com", 
-"favoriteColor":"blue", 
+"favoriteColor":"violet", 
 "birthday":"1/12/20"
 } 
 
 ### //DELETE contact 
 
-DELETE http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1
+DELETE http://localhost:8080/contacts/6451cd814bef45b987f7ac15 HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts/64473cf593c8ccb1f0dd16df
@@ -75,7 +75,8 @@ GET https://swain341-test.onrender.com/contacts
 
 ###
 POST https://swain341-test.onrender.com/contacts HTTP/1.1
-content-type: application/json
+Content-Type: application/json
+
 {
 "firstName":"Ashley", 
 "lastName":"Weaver", 
@@ -87,6 +88,7 @@ content-type: application/json
 ###
 POST https://swain341-test.onrender.com/contacts HTTP/1.1
 content-type: application/json
+
 {
 "firstName":"Sarah", 
 "lastName":"Birch", 
@@ -94,6 +96,7 @@ content-type: application/json
 "favoriteColor":"Green", 
 "birthday":"12/12/20"
 } 
+
 ###
 POST https://swain341-test.onrender.com/contacts HTTP/1.1
 content-type: application/json
