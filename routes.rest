@@ -8,24 +8,39 @@ GET http://localhost:8080/contacts
 
 ### 
 
-POST http://localhost:8080/contacts HTTP/1.1 content-type:application/json
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type:application/json
 {
-"firstName":"Ashley", "lastName":"Weaver", "email":"aWeaver@test.com", "favoriteColor":"Brown", "birthday":"06/19/2000"
+"firstName":"Ashley", 
+"lastName":"Weaver", 
+"email":"aWeaver@test.com", 
+"favoriteColor":"Brown", 
+"birthday":"06/19/2000"
 }
 
 ### 
-POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+POST http://localhost:8080/contacts HTTP/1.1 
+content-type: application/json
 {
-"firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+"firstName":"Sarah", 
+"lastName":"Birch", 
+"email":"test@gmail.com", 
+"favoriteColor":"Green", 
+"birthday":"12/12/20"
 } 
 
 ### 
-PUT http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1 content-type: application/json
+PUT http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1 
+content-type: application/json
 
 {
-"firstName":"Sarah", "lastName":"Birch", "email":"test@gmail.com", "favoriteColor":"Green", "birthday":"12/12/20"
+"firstName":"Samantha", 
+"lastName":"Buchard", 
+"email":"test@gmail.com", 
+"favoriteColor":"Violet", 
+"birthday":"1/12/20"
 } 
-### DELETE contact 
+### //DELETE contact 
 DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
 
 ###
