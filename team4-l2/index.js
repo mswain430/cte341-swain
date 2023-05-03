@@ -1,8 +1,8 @@
 var express = require('express');
 const bodyParser = require('body-parser');
-const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
-const routes = reequire('./routes');
+//const MongoClient = require('mongodb').MongoClient;
+const routes = require('./routes');
 
 const port = process.env.PORT || 8080
 var app = express();
@@ -20,7 +20,7 @@ mongodb.initDb((err, mongodb) => {
         console.log(err);
     } else {
         app.listen(port);
-        console.log('Connected to DB and listening on ${port}')
+        console.log(`Connected to DB and listening on ${port}`)
     }
 });
 
