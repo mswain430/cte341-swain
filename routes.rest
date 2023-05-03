@@ -9,7 +9,8 @@ GET http://localhost:8080/contacts
 ### 
 
 POST http://localhost:8080/contacts HTTP/1.1
-content-type:application/json
+Content-Type:application/json
+
 {
 "firstName":"Ashley", 
 "lastName":"Weaver", 
@@ -20,7 +21,8 @@ content-type:application/json
 
 ### 
 POST http://localhost:8080/contacts HTTP/1.1
-content-type: application/json
+Content-Type: application/json
+
 {
 "firstName":"Sarah", 
 "lastName":"Birch", 
@@ -37,11 +39,13 @@ content-type: application/json
 "firstName":"Samantha", 
 "lastName":"Buchard", 
 "email":"test@gmail.com", 
-"favoriteColor":"Violet", 
+"favoriteColor":"blue", 
 "birthday":"1/12/20"
 } 
+
 ### //DELETE contact 
-DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
+
+DELETE http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1
 
 ###
 GET http://localhost:8080/contacts/64473cf593c8ccb1f0dd16df
