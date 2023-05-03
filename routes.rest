@@ -57,7 +57,7 @@ GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e1
 GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e2  
  
 ### 
-GET GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e3
+GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e3
 
 
 // PRODUCTION Deploy 
@@ -66,8 +66,42 @@ GET https://swain341-test.onrender.com
 ### 
 //GET https://swain341-test.onrender.com/professional
 
+###
 GET https://swain341-test.onrender.com/contacts
 
+###
+POST https://swain341-test.onrender.com/contacts HTML/1.1
+content-type: application/json
+{
+"firstName":"Ashley", 
+"lastName":"Weaver", 
+"email":"aWeaver@test.com", 
+"favoriteColor":"Brown", 
+"birthday":"06/19/2000"
+}
+
+###
+POST https://swain341-test.onrender.com/contacts HTML/1.1
+content-type: application/json
+{
+"firstName":"Sarah", 
+"lastName":"Birch", 
+"email":"test@gmail.com", 
+"favoriteColor":"Green", 
+"birthday":"12/12/20"
+} 
+###
+POST https://swain341-test.onrender.com/contacts HTML/1.1
+content-type: application/json
+{
+"firstName":"Samantha", 
+"lastName":"Buchard", 
+"email":"test@gmail.com", 
+"favoriteColor":"Violet", 
+"birthday":"1/12/20"
+} 
+
+###
 GET https://swain342-test.onrender.com/contacts/64473cf593c8ccb1f0dd16e0
 ### 
 GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e1 
