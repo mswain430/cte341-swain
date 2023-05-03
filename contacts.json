@@ -1,36 +1,37 @@
-{"contact0": {
-"firstName": "Ryan",
-"lastName": "Alvord",
-"email": "ralvord@byui.edu",
-"favoriteColor": "blue",
-"birthday": "06/19/2000"
-},
-"contact1": {
-"firstName": "Tulio Ricardo",
-"lastName": "Banegas Izaguirre",
-"email": "tizaguirre@byui.edu",
-"favoriteColor": "blue",
-"birthday": "06/19/2000"
-},
-"contact2": {
-"firstName": "Peace Andrew",
-"lastName": "Arikpo",
-"email": "parikpo@byui.edu",
-"favoriteColor": "blue",
-"birthday": "06/19/2000"
-},
-"contact3":{
-"firstName": "Sheyla",
-"lastName": "Norton",
-"email": "snorton@byui.edu",
-"favoriteColor": "blue",
-"birthday": "06/19/2000"
-},
-"contact4": {
-"firstName": "Melanie",
-"lastName": "Michaels",
-"email": "mmichaels@byui.edu",
-"favoriteColor": "green",
-"birthday": "06/19/2000"
-}
+ {
+    "contact0": {
+    "firstName": "Ryan",
+    "lastName": "Alvord",
+    "email": "ralvord@byui.edu",
+    "favoriteColor": "blue",
+    "birthday": "06/19/2000"
+    },
+    "contact1": {
+    "firstName": "Tulio Ricardo",
+    "lastName": "Banegas Izaguirre",
+    "email": "tizaguirre@byui.edu",
+    "favoriteColor": "blue",
+    "birthday": "06/19/2000"
+    },
+    "contact2": {
+    "firstName": "Peace Andrew",
+    "lastName": "Arikpo",
+    "email": "parikpo@byui.edu",
+    "favoriteColor": "blue",
+    "birthday": "06/19/2000"
+    },
+    "contact3":{
+    "firstName": "Sheyla",
+    "lastName": "Norton",
+    "email": "snorton@byui.edu",
+    "favoriteColor": "blue",
+    "birthday": "06/19/2000"
+    },
+    "contact4": {
+    "firstName": "Melanie",
+    "lastName": "Michaels",
+    "email": "mmichaels@byui.edu",
+    "favoriteColor": "green",
+    "birthday": "06/19/2000"
+    }
 }
