@@ -1,17 +1,18 @@
-const express = require('express');
-const router = express.Router();
-const contact = require('contacts')
+import { Router } from 'express';
+const router = Router();
+import contact from 'contacts';
 router.use('/contacts', require('./contacts'))
 
-routes.use('/contacts', contact);
-routes.use(
+router.use('/contacts', contact);
+
+router.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
+      documentationURL: 'https://swain341-test.onrender.com/swain-byui-api-docs',
     };
     res.send(docData);
   })
 );
 
-module.exports = router;
+export default router;
