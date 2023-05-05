@@ -15,7 +15,7 @@ const port = process.env.PORT || 8080;
 const app = express();
 const cors = require('cors');
 
-app.use('/', require('./routes').default);
+app.use('/', require('./router').default);
 
 // let bodyParser = require('body-parser');
 app.use('/', bodyParser.json());
