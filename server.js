@@ -15,13 +15,18 @@ const port = process.env.PORT || 8080;
 const app = express();
 const cors = require('cors');
 
-app.use('/', require('./router').default);
+app.use('/', require('./routes').default);
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // let bodyParser = require('body-parser');
 app.use('/', bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use((req, res, next) => {
+   // req = console.log (`getting headers`);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 
     'Origin, X-Requested-With, Content-Type, Accept, Z-Key')
