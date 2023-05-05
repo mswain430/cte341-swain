@@ -1,6 +1,6 @@
 const express = require('express');
 const router = Router();
-import contact from 'contacts';
+const contact = require('contacts');
 router.use('/contacts', require('./contacts'))
 
 router.use('/contacts', contact);
