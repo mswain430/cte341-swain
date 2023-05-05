@@ -1,4 +1,4 @@
-import { Router } from 'express';
+const express = require('express');
 const router = Router();
 import contact from 'contacts';
 router.use('/contacts', require('./contacts'))
