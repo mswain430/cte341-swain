@@ -1,4 +1,5 @@
 var express = require("express");
+const routes = require('express').Router();
 var app = express();
 
 app.set("port", process.env.PORT || 3000);
@@ -11,8 +12,6 @@ function getData(req, res) {
 }
 
 app.listen(app.get("port"), () => console.log("server is listening on port " + app.get("port")));
-
-const routes = require('express').Router();
 
 routes.use('/temples', temple);
 routes.use(
