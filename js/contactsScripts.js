@@ -16,7 +16,7 @@ async function apiFetch(email) {
     displayContactsfavoriteColor(data.favoriteColor);
     displayContactsBirthday(data.birthday);
    // displayContactsEmailTitleText(data);
-    displayContactsEmailLink(data.email);
+   // displayContactsEmailLink(data.email);
 
   }
   
@@ -35,7 +35,7 @@ async function apiFetch(email) {
   } */
   function displayContactsEmailLink(data) {
     let emailLink = document.getElementById('emailLink');
-    emailLink.innerHTML = data.email.text;
+    emailLink.innerHTML = data.emailLink.text;
     emailLink.href = data.emailLink.link;
   } 
 
