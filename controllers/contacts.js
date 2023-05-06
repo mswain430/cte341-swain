@@ -16,6 +16,7 @@ const getSingle = async (req, res) => {
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Content-Type', 'text/plain');
     res.status(200).json(lists);
   });
 };
@@ -31,6 +32,7 @@ const createContact = async (req, res) => {
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);
+    res.setHeader('Content-Type', 'text/plain');
   } else {
     res.status(500).json(response.error || 'Some error occurred while creating contact');
   }
