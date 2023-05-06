@@ -1,13 +1,11 @@
-// const express = require('express');
-// const contact = require('contacts');
-const express = require('express');
-const router = express.Router();
-
-router.use('/', require('./swagger'));
-router.use('/contacts', require('./contacts'));
+const routes = require('express').Router();
+//const contact = require('contacts');
+//const contactsController = require('../controllers/contacts')
+//router.use('/', require('./swagger'));
+routes.use('/contacts', require('../controllers/contacts'));
 
 /*
-router.use(
+routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
@@ -18,4 +16,4 @@ router.use(
 ); 
 */
 
-module.exports = router;
+module.exports = routes;
