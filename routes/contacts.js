@@ -12,10 +12,6 @@ router.get('/', contactsController.getAll);
 
 router.get('contacts:id', contactsController.getSingle);
 
-router.get('/', contactsController.getAll);
-
-router.get('/:id', contactsController.getSingle);
-
 router.post('/', contactsController.createContact);
 
 router.put('/:id', contactsController.updateContact);
