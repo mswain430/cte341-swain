@@ -1,10 +1,12 @@
 // const express = require('express');
-const router = Router();
-const contact = require('contacts');
-router.use('/contacts', require('./contacts'))
+// const contact = require('contacts');
+const express = require('express');
+const router = express.Router();
 
-router.use('/contacts', contact);
+router.use('/', require('./swagger'));
+router.use('/contacts', require('./contacts'));
 
+/*
 router.use(
   '/',
   (docData = (req, res) => {
@@ -13,6 +15,7 @@ router.use(
     };
     res.send(docData);
   })
-);
+); 
+*/
 
-export default router;
+module.exports = router;

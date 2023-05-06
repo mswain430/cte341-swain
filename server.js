@@ -1,21 +1,10 @@
-/* const express = require('express');
-const app = express();
-const port = process.env.PORT || 8080;
-
-app.use('/', require('./routes'))
-
-app.listen(port, () => {
-    console.log(`Running on port ${port}`)
-}) */
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
+
 const port = process.env.PORT || 8080;
 const app = express();
 const cors = require('cors');
-
-app.use('/', require('./routes').default);
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
@@ -23,7 +12,13 @@ const swaggerDocument = require('./swagger.json');
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 // let bodyParser = require('body-parser');
 app.use('/', bodyParser.json());
+
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}));
+app.use(cors({
+origin: '*'
+})); 
 
 app.use((req, res, next) => {
    // req = console.log (`getting headers`);
@@ -35,11 +30,8 @@ app.use((req, res, next) => {
     next();
   });
   
-  app.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}));
-  app.use(cors({
-  origin: '*'
-  })); 
-  
+  app.use('/', require('./routes').default);
+
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
