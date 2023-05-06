@@ -16,7 +16,7 @@ const getSingle = async (req, res) => {
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Content-Type', 'text/plain');
+    //res.setHeader('Content-Type', 'text/plain');
     res.status(200).json(lists);
   });
 };

@@ -34,7 +34,7 @@ app.use(cors({
 //app.use('contacts', require('./routes').default);
 //app.get('/', contactsController.contactsRoute);
 app.use('/professional', professionalRoutes);
-app.use('contacts', contactsRoutes);
+app.use('/contacts', contactsRoutes);
 
 mongodb.initDb((err) => {
   if (err) {
