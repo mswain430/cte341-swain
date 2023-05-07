@@ -4,8 +4,16 @@ const app = express();
 //const contact = require('contacts');
 //const contactsController = require('../controllers/contacts')
 //router.use('/', require('./swagger'));
-routes.use('/', require('../controllers/contacts'));
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
 
+routes.use('/api-docs', swaggerUi.serve);
+routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
+
+routes.use('/contacts', require('../controllers/contacts'));
+routes.use('/professional', require('../controllers/professional'));
+routes.use('/', require('./swagger'))
+routes.use('/temples', require('./temples'))
 routes.get('/home', (req,res) => {
   res.send('Hello World, This is home router');
 });
@@ -23,7 +31,7 @@ routes.get('/logout', (req,res) => {
 });
 
 app.use('/', routes);
-/*
+
 routes.use(
   '/',
   (docData = (req, res) => {
@@ -33,6 +41,6 @@ routes.use(
     res.send(docData);
   })
 ); 
-*/
+
 
 module.exports = routes;

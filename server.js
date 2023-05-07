@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
-const professionalRoutes = require('./routes/professional')
-const contactsRoutes = require('./routes/contacts')
+//const professionalRoutes = require('./routes/professional');
+//const contactsRoutes = require('./routes/contacts');
 const port = process.env.PORT || 8080;
 const cors = require('cors');
 
@@ -32,9 +32,10 @@ app.use(cors({
   })); 
 
 //app.use('contacts', require('./routes').default);
-//app.get('/', contactsController.contactsRoute);
-app.use('/professional', professionalRoutes);
-app.use('/contacts', contactsRoutes);
+//app.get('/contacts', contactsRoutes);
+//app.use('/professional', professionalRoutes);
+//app.use('/contacts', contactsRoutes);
+//app.use('/', routes);
 
 mongodb.initDb((err) => {
   if (err) {
