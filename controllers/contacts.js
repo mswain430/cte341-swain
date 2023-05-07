@@ -9,9 +9,9 @@ const getAll = async (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
   })
-} catch (err) {
-  res.status(500).json({message: err.message});
-}
+  } catch (err) {
+    res.status(500).json({message: err.message});
+  }
 };
 
 const getSingle = async (req, res) => {
@@ -21,11 +21,11 @@ const getSingle = async (req, res) => {
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     //res.setHeader('Content-Type', 'text/plain');
-    res.status(200).json(lists);
+    res.status(200).json(lists[0]);
   })
-} catch (err) {
-  res.status(500).json({err});
-}
+  } catch (err) {
+    res.status(500).json({err});
+  }
 };
 
 const createContact = async (req, res) => {
@@ -42,15 +42,16 @@ const createContact = async (req, res) => {
   if (response.acknowledged) {
     res.status(201).json(response);
     res.setHeader('Content-Type', 'text/plain');
-  } else {
-    res.status(500).json(response.error || 'Some error occurred while creating contact');
-  }
-} catch (err) {
+    } else {
+      res.status(500).json(response.error || 'Some error occurred while creating contact');
+    }
+  } catch (err) {
   res.status(500).json({err});
-}
+  }
 };
 
 const updateContact = async (req, res) => {
+  try {
   const userId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const contact = {
@@ -65,11 +66,14 @@ const updateContact = async (req, res) => {
     .db()
     .collection('contacts')
     .updateOne({ _id: userId }, contact);
-  console.log(response);
-  if (response.modifiedCount > 0) {
-    res.status(204).send();
-  } else {
-    res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+    console.log(response);
+    if (response.modifiedCount > 0) {
+      res.status(204).send();
+      } else {
+        res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+      }
+  } catch (err) {
+  res.status(500).json({err});
   }
 };
 
@@ -84,12 +88,12 @@ const deleteContact = async (req, res) => {
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
-  } else {
-    res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
-  }
-} catch (err) {
+    } else {
+      res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+    }
+  } catch (err) {
   res.status(500).json({err});
-}
+  }
 };
 
 module.exports = { 
