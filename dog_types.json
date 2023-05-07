@@ -1,0 +1,8 @@
+[{ "_id" : "A1", "catagory": "Akita", "avgHeight": "24-28", "avgWeight": "70-130", "lifeExpectancy": "12-13 years", "colors": "black,brown,white", "protective": 5, "Affectionate": 3},
+{ "_id" : "B2", "catagory": "Basset Hound", "avgHeight": "15", "avgWeight": "40-65", "lifeExpectancy": "10-14 years", "colors": "black,brown,white", "protective": 5, "Affectionate": 3},
+{ "_id" : "C3", "catagory": "Cairn Terrier", "avgHeight": "9.5-10", "avgWeight": "13-14", "lifeExpectancy": "13-15 years", "colors": "brindle,cream,gray", "protective": 4, "Affectionate": 4},
+{ "_id" : "G4", "catagory": "German Shorthaired Pointer", "avgHeight": "21-25", "avgWeight": "45-70", "lifeExpectancy": "10-12 years", "colors": "black,brown,white", "protective": 4, "Affectionate": 5 },
+{ "_id" : "K5", "catagory": "Kishu Ken", "avgHeight": "19-22", "avgWeight": "30-60", "lifeExpectancy": "12-15 years", "colors": "black,brown,white", "protective": 3, "Affectionate": 5 },
+{ "_id" : "L6", "catagory": "Labrador Retriever", "avgHeight": "21-25", "avgWeight": "55-80", "lifeExpectancy": "11-13 years", "colors": "black,brown,white", "protective": 3, "Affectionate": 5 },
+{ "_id" : "M7", "catagory": "Miniature American Shepherd", "avgHeight": "13-18", "avgWeight": "20-40", "lifeExpectancy": "12-13 years", "colors": "black,brown,white", "protective": 5, "Affectionate": 3 },
+{ "_id" : "M8", "catagory": "Maltese", "avgHeight": "7-9", "avgWeight": "7", "lifeExpectancy": "12-15 years", "colors": "tan,lemon,white", "protective": 3, "Affectionate": 5 }]
