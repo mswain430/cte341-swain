@@ -6,14 +6,15 @@ const app = express();
 //router.use('/', require('./swagger'));
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../swagger.json');
-routes.use('/', require('./swagger'));
+
 routes.use('/api-docs', swaggerUi.serve);
 routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
-
-routes.use('/contacts', require('../controllers/contacts'));
+//routes.use('/', require('../controllers/swagger'));
 routes.use('/professional', require('../controllers/professional'));
-routes.use('/', require('./swagger'))
-routes.use('/temples', require('./temples'))
+routes.use('/temples', require('../controllers/temples'));
+routes.use('/contacts', require('../controllers/contacts'));
+
+/*
 routes.get('/home', (req,res) => {
   res.send('Hello World, This is home router');
 });
@@ -29,7 +30,7 @@ routes.get('/login', (req,res) => {
 routes.get('/logout', (req,res) => {
   res.send('Hello World, This is logout router');
 });
-
+*/
 app.use('/', routes);
 
 routes.use(
