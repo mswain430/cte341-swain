@@ -34,6 +34,7 @@ Content-Type: application/json
 } 
 
 ### 
+
 PUT http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1
 content-type: application/json
 
@@ -47,7 +48,8 @@ content-type: application/json
 
 ### //DELETE contact 
 
-DELETE http://localhost:8080/contacts/6457515e3af4abdf67cd2940 HTTP/1.1
+DELETE http://localhost:8080/contacts/6456d9ff2a6aa84b616b2aec HTTP/1.1
+
 
 ###
 
@@ -59,17 +61,6 @@ GET http://localhost:8080/contacts/64473cf593c8ccb1f0dd16df
 GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e0 
  
 ### 
-
-GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e1
-
-### 
-
-GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e2  
- 
-### 
-
-GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e3
-
 
 // PRODUCTION Deploy 
 ### 
@@ -118,7 +109,7 @@ Content-Type: application/json
 "firstName":"Samantha", 
 "lastName":"Buchard", 
 "email":"test@gmail.com", 
-"favoriteColor":"Violet", 
+"favoriteColor":"Blue-violet", 
 "birthday":"1/12/20"
 } 
 
