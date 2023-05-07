@@ -1,9 +1,5 @@
-const routes = require('express').Router();
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('../swagger.json');
-
-routes.use('/api-docs', swaggerUi.serve);
-routes.get('/api-docs', swaggerUi.setup(swaggerDocument));
+const express = require('express');
+const routes = express.Router();
 
 const contactsController = require('../controllers/contacts');
 
@@ -19,8 +15,4 @@ routes.put('/:id', contactsController.updateContact);
 
 routes.delete('/:id', contactsController.deleteContact);
 
-app.use('/', routes);
-
 module.exports = routes;
-
-

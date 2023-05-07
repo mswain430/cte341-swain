@@ -24,7 +24,7 @@ const getSingle = async (req, res) => {
     res.status(200).json(lists);
   })
 } catch (err) {
-  res.status(500).json({message: err.message});
+  res.status(500).json({err});
 }
 };
 
@@ -46,7 +46,7 @@ const createContact = async (req, res) => {
     res.status(500).json(response.error || 'Some error occurred while creating contact');
   }
 } catch (err) {
-  res.status(500).json({message: err.message});
+  res.status(500).json({err});
 }
 };
 
@@ -88,7 +88,7 @@ const deleteContact = async (req, res) => {
     res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
   }
 } catch (err) {
-  res.status(500).json({message: err.message});
+  res.status(500).json({err});
 }
 };
 
