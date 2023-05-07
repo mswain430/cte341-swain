@@ -64,7 +64,7 @@ const updateContact = async (req, res) => {
     .getDb()
     .db()
     .collection('contacts')
-    .replaceOne({ _id: userId }, contact);
+    .updateOne({ _id: userId }, contact);
   console.log(response);
   if (response.modifiedCount > 0) {
     res.status(204).send();
@@ -74,14 +74,22 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  try {
   const userId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId }, true);
+  const response = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .deleteOne({ _id: userId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
   } else {
     res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
   }
+} catch (err) {
+  res.status(500).json(err);
+}
 };
 
 module.exports = { 
