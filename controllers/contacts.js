@@ -73,7 +73,7 @@ const updateContact = async (req, res) => {
         res.status(500).json(response.error || 'Some error occurred while updating the contact.');
       }
       } catch (err) {
-  res.status(500).json({response.error || 'Error occurred while updating the contact.});
+        res.status(500).json({err})
   }
   };
 
@@ -92,7 +92,7 @@ const deleteContact = async (req, res) => {
       res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
     }
   } catch (err) {
-  res.status(500).json({response.error || 'Some error occurred while deleting contact'});
+  res.status(500).json({err});
   }
 };
 
