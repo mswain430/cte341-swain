@@ -80,9 +80,9 @@ POST https://swain341-test.onrender.com/contacts HTTP/1.1
 Content-Type: application/json
 
 {
-"firstName":"Sarah", 
-"lastName":"Weaver", 
-"email":"aWeaver@test.com", 
+"firstName":"Marvel", 
+"lastName":"Mannard", 
+"email":"mm@test.com", 
 "favoriteColor":"Brown", 
 "birthday":"06/19/2000"
 }
@@ -109,13 +109,17 @@ Content-Type: application/json
 "firstName":"Samantha", 
 "lastName":"Buchard", 
 "email":"test@gmail.com", 
-"favoriteColor":"Blue-violet", 
+"favoriteColor":"violet", 
 "birthday":"1/12/20"
 } 
 
 ###
 
-DELETE https://swain342-test.onrender.com/contacts/6456d9ff2a6aa84b616b2aec
+
+
+GET https://swain342-test.onrender.com/contacts/
+
+
 
 ### 
 GET https://swain341-test.onrender.com/contacts/64473e4693c8ccb1f0dd16e1 
