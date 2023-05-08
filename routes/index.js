@@ -11,7 +11,7 @@ routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://swain341-test.onrender.com',
+      documentationURL: 'https://swain341-test.onrender.com/api-docs',
     };
     res.send(docData);
   })
