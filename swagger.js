@@ -5,12 +5,12 @@ const doc = {
     title: 'Contacts API',
     description: 'Contacts API',
   },
-  host: 'https://swain341-test.onrender.com',  //https://swain341-test.onrender.com
+  host: 'swain341-test.onrender.com',  //https://swain341-test.onrender.com
   schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./server.js'];
+const endpointsFiles = ['./routes/index.js'];
 
 // generate swagger.json
 swaggerAutogen(outputFile, endpointsFiles, doc);

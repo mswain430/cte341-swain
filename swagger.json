@@ -8,7 +8,7 @@
   "host": "swain341-test.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/": {
+    "/contacts/": {
       "get": {
         "description": "",
         "produces": [
@@ -75,7 +75,31 @@
         }
       }
     },
-    "/{id}": {
+    "/{contactscontactsid}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "contactscontactsid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/contacts/{id}": {
       "put": {
         "description": "",
         "parameters": [
