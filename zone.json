@@ -1,0 +1,9 @@
+[{"zoneNum":3,"lowestWinterTemp":"-40° to -30° F"},
+{"zoneNum":4,"lowestWinterTemp": "30° to -20° F"},
+{"zoneNum":5,"lowestWinterTemp":"-20° to -10° F"},
+{"zoneNum":6,"lowestWinterTemp":"-10° to 0° F"},
+{"zoneNum":7,"lowestWinterTemp":"0° to 10° F"},
+{"zoneNum":8,"lowestWinterTemp":"10° to 20° F"},
+{"zoneNum":9,"lowestWinterTemp":"20° to 30° F"},
+{"zoneNum":10,"lowestWinterTemp":"30° to 40° F"}
+]
