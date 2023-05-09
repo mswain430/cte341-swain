@@ -4,7 +4,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
   try {
-  const result = await mongodb.getDb().db().collection('zone9flowers').find();
+  const result = await mongodb.getDb().db('flowerdb').collection('zone9flowers').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -17,7 +17,7 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
   try {
   const flowerId = new ObjectId(req.params.id);
-  const result = await mongodb.getDb().db().collection('zone9flowers').find({ _id: flowerId });
+  const result = await mongodb.getDb().db('flowerdb').collection('zone9flowers').find({ _id: flowerId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     //res.setHeader('Content-Type', 'text/plain');
@@ -41,7 +41,7 @@ const createFlower = async (req, res) => {
     exposure: req.body.exposure
   };
   console.log(req.body);
-  const response = await mongodb.getDb().db().collection('zone9flowers').insertOne(flower);
+  const response = await mongodb.getDb().db('flowerdb').collection('zone9flowers').insertOne(flower);
   if (response.acknowledged) {
     res.status(201).json(response);
     res.setHeader('Content-Type', 'text/plain');
