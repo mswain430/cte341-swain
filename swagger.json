@@ -162,6 +162,169 @@
           }
         }
       }
+    },
+    "/flowers/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "flowerName": {
+                  "example": "any"
+                },
+                "famiy": {
+                  "example": "any"
+                },
+                "img": {
+                  "example": "any"
+                },
+                "desc": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "droughtTolerant": {
+                  "example": "any"
+                },
+                "bloomTime": {
+                  "example": "any"
+                },
+                "exposure": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/{flowerscontactsid}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "flowerscontactsid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/flowers/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "flowerName": {
+                  "example": "any"
+                },
+                "famiy": {
+                  "example": "any"
+                },
+                "img": {
+                  "example": "any"
+                },
+                "desc": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "droughtTolerant": {
+                  "example": "any"
+                },
+                "bloomTime": {
+                  "example": "any"
+                },
+                "exposure": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
     }
   }
 }
