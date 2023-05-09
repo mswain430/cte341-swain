@@ -3,7 +3,7 @@ const routes = express.Router();
 const app = express();
 
 routes.use('/', require('./swagger'));
-routes.use('/contacts', require('./contacts'));
+//routes.use('/contacts', require('./contacts'));
 //routes.use('/templess', require('./temples'));
 routes.use('/flowers', require('./flowers'));
 

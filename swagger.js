@@ -2,8 +2,10 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'Contacts API',
-    description: 'Contacts API',
+    //title: 'Contacts API',
+    //description: 'Contacts API',
+    title: 'Millies Backyard Flowers',
+    description: 'Flowers API'
   },
   host: 'swain341-test.onrender.com',  //https://swain341-test.onrender.com
   schemes: ['https'],
