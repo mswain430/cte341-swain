@@ -69,7 +69,7 @@ const updateFlower = async (req, res) => {
   };
   const response = await mongodb
     .getDb()
-    .db()
+    .db('flowerdb')
     .collection('zone9flowers')
     .replaceOne({ _id: flowerId }, flower);
     console.log(response);
@@ -88,7 +88,7 @@ const deleteFlower = async (req, res) => {
   const flowerId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
-    .db()
+    .db('flowerdb')
     .collection('zone9flowers')
     .deleteOne({ _id: flowerId }, true);
   console.log(response);

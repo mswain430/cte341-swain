@@ -7,7 +7,7 @@ const flowerController = require('../controllers/flowers');
 
 routes.get('/', flowerController.getAll);
 
-routes.get('contacts:id', flowerController.getSingle);
+routes.get('flowers:id', flowerController.getSingle);
 
 routes.post('/', flowerController.createFlower);
 
