@@ -420,13 +420,14 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "devStart": "nodemon server.js",
     "swagger": "node ./swagger.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mswain430/CSE341-swain-Project2"
+   //"url": "localhost:8080"
   },
   "author": "Millie Swain",
   "bugs": {

@@ -11,6 +11,75 @@ GET http://localhost:8080/contacts
 
 GET http://localhost:8080/flowers
 
+###
+
+POST http://localhost:8080/zone9flowers HTTP/1.1
+
+{
+   "flowerName": "Ivy Geranium" ,
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/1.jpg",
+    "desc": "Care for ivy geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+POST http://localhost:8080/zone9flowers HTTP/1.1
+
+{
+   "flowerName": "Geranium" ,
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/18.jpg",
+    "desc": "Care for geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+POST http://localhost:8080/zone9flowers HTTP/1.1
+
+{
+   "flowerName": "Martha Washington Geranium",
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/17.jpg",
+    "desc": "Care for geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+
+PUT http://localhost:8080/zone9flowers/64596ab0550959d7b4b0ebc1 HTTP/1.1
+
+{
+    "_id": "64596ab0550959d7b4b0ebc1",
+    "flowerName": "Succulent",
+    "family": "Succulent",
+    "img": "img/pic17.webp",
+    "desc": "Succulents have the ability to thrive on limited water sources, such as mist and dew.(wiki)",
+    "location": "San Diego, California",
+    "zone": "9",
+    "droughtTolerant": "yes",
+    "bloomTime": "year around",
+    "exposure": "partial shade"
+  }
+
 ### 
 
 POST http://localhost:8080/contacts HTTP/1.1
