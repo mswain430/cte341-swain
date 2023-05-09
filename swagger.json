@@ -52,23 +52,26 @@
                 "famiy": {
                   "example": "any"
                 },
+                "type": {
+                  "example": "perrenial/annual"
+                },
                 "img": {
-                  "example": "any"
+                  "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "any"
+                  "example": "San Diego, CA"
                 },
                 "droughtTolerant": {
-                  "example": "any"
+                  "example": "yes"
                 },
                 "bloomTime": {
-                  "example": "any"
+                  "example": "Spring/Summer/Fall/Winter"
                 },
                 "exposure": {
-                  "example": "any"
+                  "example": "Full-sun/Partial-Sun/Shade"
                 }
               }
             }

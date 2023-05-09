@@ -60,6 +60,7 @@ const updateFlower = async (req, res) => {
   const flower = {
     flowerName: req.body.flowerName,
     family: req.body.famiy,
+    type: req.body.type,
     img: req.body.img,
     desc: req.body.desc,
     location: req.body.location,
