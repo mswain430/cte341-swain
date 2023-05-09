@@ -427,8 +427,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mswain430/CSE341-swain-Project2"
-   //"url": "localhost:8080"
-  },
+   },
   "author": "Millie Swain",
   "bugs": {
     "url": "https://github.com/mswain430/cte341-swain/issues"
