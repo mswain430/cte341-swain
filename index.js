@@ -1,7 +1,7 @@
 var express = require("express");
 const routes = require('express').Router();
 var app = express();
-// const export=: Router
+// const export =: Router
 
 /* app.set("port", process.env.PORT || 3000);
 app.get("/", getData);
