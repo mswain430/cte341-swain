@@ -84,7 +84,7 @@
         }
       }
     },
-    "/{flowerscontactsid}": {
+    "/{flowersId}": {
       "get": {
         "description": "",
         "produces": [
@@ -92,7 +92,7 @@
         ],
         "parameters": [
           {
-            "name": "flowerscontactsid",
+            "name": "flowersId",
             "in": "path",
             "required": true,
             "type": "string"
