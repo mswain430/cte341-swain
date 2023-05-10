@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 const flowerController = require('../controllers/flowers');
-const validation = require('..middleware/validate')
+const validation = require('../middleware/validate')
 
 //routes.get('/', contactsController.getData);
 

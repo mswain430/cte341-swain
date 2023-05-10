@@ -7,8 +7,8 @@ const doc = {
     title: 'Millies Backyard Flowers',
     description: 'Flowers API'
   },
-  host: 'swain341-test.onrender.com',  //https://swain341-test.onrender.com
-  schemes: ['https'],
+  host: 'localhost:8080', //'swain341-test.onrender.com',  //https://swain341-test.onrender.com
+  schemes: ['http'],
 };
 
 const outputFile = './swagger.json';
