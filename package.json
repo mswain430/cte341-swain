@@ -102,6 +102,7 @@
     "etag": "^1.8.1",
     "expand-template": "^2.0.3",
     "express": "^4.18.2",
+    "express-validator": "^7.0.1",
     "fast-deep-equal": "^3.1.3",
     "fast-diff": "^1.2.0",
     "fast-json-patch": "^3.1.1",
@@ -350,12 +351,12 @@
     "sprintf-js": "^1.0.3",
     "stampit": "^4.3.2",
     "statuses": "^2.0.1",
+    "string_decoder": "^1.1.1",
     "string-width": "^1.0.2",
     "string.prototype.matchall": "^4.0.8",
     "string.prototype.trim": "^1.2.7",
     "string.prototype.trimend": "^1.0.6",
     "string.prototype.trimstart": "^1.0.6",
-    "string_decoder": "^1.1.1",
     "strip-ansi": "^6.0.1",
     "strip-json-comments": "^3.1.1",
     "supports-color": "^5.5.0",
@@ -417,7 +418,6 @@
     "yocto-queue": "^0.1.0",
     "zenscroll": "^4.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
@@ -427,7 +427,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mswain430/CSE341-swain-Project2"
-   },
+  },
   "author": "Millie Swain",
   "bugs": {
     "url": "https://github.com/mswain430/cte341-swain/issues"

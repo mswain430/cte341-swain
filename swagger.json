@@ -54,7 +54,7 @@
                 },
                 "type": {
                   "example": "perrenial/annual"
-                },
+                }
                 "img": {
                   "example": "img/1.jpg"
                 },
