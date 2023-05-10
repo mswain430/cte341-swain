@@ -54,10 +54,10 @@ const createFlower = async (req, res) => {
 };
 
 const updateFlower = async (req, res) => {
+  if(!ObjectId.isValid(req.params.id)){
+    res.status(400).json('Must use a valid contact id to fine a flower instance')
+  }
   try {
-    if(!ObjectId.isValid(req.params.id)){
-      res.status(400).json('Must use a valid contact id to fine a flower instance')
-    }
   const flowerId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const flower = {
@@ -88,10 +88,10 @@ const updateFlower = async (req, res) => {
   };
 
 const deleteFlower = async (req, res) => {
+  if(!ObjectId.isValid(req.params.id)){
+    res.status(400).json('Must use a valid contact id to fine a flower instance')
+  } 
   try {
-    if(!ObjectId.isValid(req.params.id)){
-      res.status(400).json('Must use a valid contact id to fine a flower instance')
-    }
   const flowerId = new ObjectId(req.params.id);
   const response = await mongodb
     .getDb()
