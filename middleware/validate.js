@@ -33,7 +33,7 @@ const saveFlower = (req, res, next) => {
       exposure: 'string'
     };
     validator(req.body, validationRule, {}, (err, status) => {
-      if (!status) {
+      if (status) {
         res.status(412).send({
           success: false,
           message: 'Validation failed',
