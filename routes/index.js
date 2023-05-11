@@ -7,7 +7,7 @@ routes.use('/', require('./swagger'));
 routes.use('flowers', require('./flowers'));
 routes.use('contacts', require('./gardenerContacts'))
 
-routes.use(
+/* routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
@@ -15,6 +15,6 @@ routes.use(
     };
     res.send(docData);
   })
-); 
+); */
 
 module.exports = routes;
