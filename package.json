@@ -368,7 +368,6 @@
     "supports-color": "^5.5.0",
     "supports-preserve-symlinks-flag": "^1.0.0",
     "swagger": "^0.0.1",
-    "swagger-autogen": "^2.23.1",
     "swagger-client": "^3.19.7",
     "swagger-ui": "^4.18.3",
     "swagger-ui-dist": "^4.18.3",
@@ -425,14 +424,16 @@
     "yocto-queue": "^0.1.0",
     "zenscroll": "^4.0.2"
   },
-  "devDependencies":{
-
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "swagger-autogen": "^2.23.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "start-dev": "nodemon server.js",
-    "swagger": "node ./swagger.js"
+    "start": "nodemon server.js",
+    "start-dev": "nodemon templeindex.js",
+    "swagger": "node ./swagger.js",
+    "temple": "node ./templeindex.js"
   },
   "repository": {
     "type": "git",

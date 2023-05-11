@@ -1,13 +1,13 @@
 const express = require('express');
 const routes = express.Router();
 
-routes.use('/', require('./swagger'));
+routes.use('/', require('./swagger'))
 //routes.use('/contacts', require('./contacts'));
-//routes.use('/templess', require('./temples'));
+//routes.use('temples', require('./temples'));  ***** problem child
 routes.use('flowers', require('./flowers'));
 routes.use('contacts', require('./gardenerContacts'))
 
-/* routes.use(
+ routes.use(
   '/',
   (docData = (req, res) => {
     let docData = {
@@ -15,6 +15,6 @@ routes.use('contacts', require('./gardenerContacts'))
     };
     res.send(docData);
   })
-); */
+); 
 
 module.exports = routes;
