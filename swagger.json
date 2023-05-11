@@ -5,10 +5,10 @@
     "description": "Flowers API",
     "version": "1.0.0"
   },
-  "host": "swain341-test.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/api-docs": {
@@ -53,25 +53,28 @@
                   "example": "any"
                 },
                 "type": {
-                  "example": "perrenial/annual"
+                  "example": "any"
                 },
                 "img": {
-                  "example": "img/1.jpg"
+                  "example": "any"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "San Diego, CA"
+                  "example": "any"
                 },
                 "droughtTolerant": {
-                  "example": "yes"
+                  "example": "any"
                 },
                 "bloomTime": {
-                  "example": "Spring/Summer/Fall/Winter"
+                  "example": "any"
                 },
                 "exposure": {
-                  "example": "Full-sun/Partial-Sun/Shade"
+                  "example": "any"
+                },
+                "zipcode": {
+                  "example": "any"
                 }
               }
             }
@@ -81,13 +84,16 @@
           "201": {
             "description": "Created"
           },
+          "412": {
+            "description": "Precondition Failed"
+          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       }
     },
-    "/{flowersId}": {
+    "/{flowersflowersid}": {
       "get": {
         "description": "",
         "produces": [
@@ -95,7 +101,7 @@
         ],
         "parameters": [
           {
-            "name": "flowersId",
+            "name": "flowersflowersid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -105,8 +111,8 @@
           "200": {
             "description": "OK"
           },
-          "500": {
-            "description": "Internal Server Error"
+          "400": {
+            "description": "Bad Request"
           }
         }
       }
@@ -130,7 +136,10 @@
                 "flowerName": {
                   "example": "any"
                 },
-                "famiy": {
+                "family": {
+                  "example": "any"
+                },
+                "type": {
                   "example": "any"
                 },
                 "img": {
@@ -150,6 +159,9 @@
                 },
                 "exposure": {
                   "example": "any"
+                },
+                "zipcode": {
+                  "example": "any"
                 }
               }
             }
@@ -158,6 +170,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -177,6 +192,145 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "gardenerContacts/": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "produces": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "zipcode": {
+                  "example": "any"
+                },
+                "cellphone": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "gardenerContacts/{id}": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "zipcode": {
+                  "example": "any"
+                },
+                "cellphone": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"

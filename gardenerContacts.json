@@ -1,0 +1,122 @@
+[
+  {
+    "firstName": "Ryan",
+    "lastName": "Alvord",
+    "address": "1234 anystreet",
+    "email": "ralvord@byui.edu",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Tulio Ricardo",
+    "lastName": "Banegas Izaguirre",
+    "address": "1234 anystreet",
+    "email": "tizaguirre@byui.edu",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Peace Andrew",
+    "lastName": "Arikpo",
+    "address": "1234 anystreet",
+    "email": "parikpo@byui.edu",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Sheyla",
+    "lastName": "Norton",
+    "address": "1234 anystreet",
+    "email": "snorton@byui.edu",
+    "zipcode": 92127,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Samantha",
+    "lastName": "Buchard",
+    "address": "1234 anystreet",
+    "email": "test@gmail.com",
+    "zipcode": 92127,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Ashley",
+    "lastName": "Weaver",
+    "address": "1234 anystreet",
+    "email": "aWeaver@test.com",
+    "zipcode": 92127,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Sarah",
+    "lastName": "Birch",
+    "address": "1234 anystreet",
+    "email": "test@gmail.com",
+    "zipcode": 92127,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Monica",
+    "lastName": "Weaver",
+    "address": "1234 anystreet",
+    "email": "aWeaver@test.com",
+    "zipcode": 92127,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Millicent",
+    "lastName": "Magnificent",
+    "address": "1234 anystreet",
+    "email": "mm@tester.com",
+    "zipcode": 92128,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Monroe",
+    "lastName": "Michaelson",
+    "address": "1234 anystreet",
+    "email": "mm@tester.com",
+    "zipcode": 92128,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Margo",
+    "lastName": "McDonald",
+    "address": "1234 anystreet",
+    "email": "mm@tester.com",
+    "zipcode": 92128,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Marvel",
+    "lastName": "Mannard",
+    "address": "1234 anystreet",
+    "email": "mm@test.com",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+  {
+    "firstName": "Melvin",
+    "lastName": "McDonald",
+    "address": "1234 anystreet",
+    "email": "mm@tester.com",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Samuel",
+    "lastName": "Buchard",
+    "streetAddress": "1234 anystreet",
+    "email": "test@gmail.com",
+    "zipcode": 92064,
+    "cellphone": "8583821111"
+  },
+ {
+    "firstName": "Allison",
+    "lastName": "Andrews",
+    "streetAddress": "1234 anystreet",
+    "email": "aa@tester.com",
+    "zipcode": 92064,
+    "cellphone": "8583820579"
+  }
+]

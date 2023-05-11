@@ -5,6 +5,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 //const professionalRoutes = require('./routes/professional');
 //const contactsRoutes = require('./routes/contacts');
+//const contactsRoutes = require('./routes/gardenerContacts');
 const port = process.env.PORT || 8080;
 const app = express();
 const cors = require('cors');
@@ -16,7 +17,8 @@ app
   //.use('contacts', require('./routes').default);
   //.get('/contacts', contactsRoutes);
   //.use('/professional', professionalRoutes);
-  //.use('/contacts', require('./contacts').default;
+  //.use('/gardenerContacts', require('./gardenderContacts'))
+  //.get('/gardenerContacts', contactsRoutes)
   .use('/', require('./routes'))
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use('/', bodyParser.json()) 

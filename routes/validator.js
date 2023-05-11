@@ -13,6 +13,7 @@ const userValidationRules = () => {
     body('droughtTolerant').isBoolean(),
     body('bloomTime').isString(),
     body('exposure').isString(),
+    body('zipcode').isInt().isLength({max: 5})
   ]
 }
 const { userValidationRules, validate } = require('./validator.js')

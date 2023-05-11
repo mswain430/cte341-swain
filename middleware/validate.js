@@ -1,25 +1,26 @@
 const validator = require('../helpers/validate');
 
-//const saveContact = (req, res, next) => {
-//  const validationRule = {
-//    firstName: 'required|string',
-//    lastName: 'required|string',
-//    email: 'required|email',
-//    favoriteColor: 'required|string',
-//    birthday: 'string'
- // };
- // validator(req.body, validationRule, {}, (err, status) => {
-//    if (!status) {
-//      res.status(412).send({
-//        success: false,
-//        message: 'Validation failed',
- //       data: err
- //     });
-//    } else {
-//      next();
-//    }
-//  });
-//};
+const saveContact = (req, res, next) => {
+const validationRule = {
+   firstName: 'required|string',
+   lastName: 'required|string',
+   address: 'string',
+   email: 'required|email',
+   zipcode: 'required|number',
+   cellphone: 'number'
+ };
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+     res.status(412).send({
+       success: false,
+       message: 'Validation failed',
+       data: err
+     });
+   } else {
+     next();
+   }
+  });
+};
 
 const saveFlower = (req, res, next) => {
     const validationRule = {
@@ -30,7 +31,8 @@ const saveFlower = (req, res, next) => {
       location: 'required|string',
       droughtTolerant: 'string',
       bloomTime: 'string',
-      exposure: 'string'
+      exposure: 'string',
+      zipcode: 'int'
     };
     validator(req.body, validationRule, {}, (err, status) => {
       if (status) {
@@ -47,6 +49,6 @@ const saveFlower = (req, res, next) => {
 
 
 module.exports = {
- // saveContact
+  saveContact,
   saveFlower
 };
