@@ -17,12 +17,12 @@ const userValidationRules = () => {
   ]
 }
 //const { userValidationRules, validate } = require('./validator.js')
-app.post('/user', userValidationRules(), validate, (req, res) => {
-  User.create({
-    username: req.body.username,
-    password: req.body.password,
-  }).then(user => res.json(user))
-})
+//app.post('/user', userValidationRules(), validate, (req, res) => {
+ // User.create({
+ //   username: req.body.username,
+ //   password: req.body.password,
+//  }).then(user => res.json(user))
+//})
 
 const validate = (req, res, next) => {
     const errors = validationResult(req)

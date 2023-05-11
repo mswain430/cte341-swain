@@ -158,7 +158,8 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
     "location": "San Diego, CA",
     "droughtTolerant": "no",
     "bloomTime": "year around",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
 }
 
 ###
@@ -190,7 +191,7 @@ Content-Type: application/json
 
 ###
 
-GET https://swain341-test.onrender.com/contacts
+GET https://swain341-test.onrender.com/gardenContacts
 
 ###
 
