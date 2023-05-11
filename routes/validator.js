@@ -1,4 +1,4 @@
-const { body, validationResult } = require('express-validator')
+const { body, validationResult } = require('validatorjs')
 const userValidationRules = () => {
   return [
     // username must be an email

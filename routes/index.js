@@ -1,12 +1,10 @@
 const express = require('express');
 const routes = express.Router();
-//const app = express();
-//app.use('/', routes);
+
 routes.use('/', require('./swagger'));
 //routes.use('/contacts', require('./contacts'));
 //routes.use('/templess', require('./temples'));
 routes.use('flowers', require('./flowers'));
-//routes.use('validator', require('./validator') )
 routes.use('contacts', require('./gardenerContacts'))
 
 routes.use(
