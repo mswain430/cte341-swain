@@ -4,7 +4,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
   try {
-  const result = await mongodb.getDb().db('flowerdb').collection('zone9flowers').find();
+  const result = await mongodb.getDb().db('flowerdb').collection('flowers').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
@@ -19,7 +19,7 @@ const getSingle = async (req, res) => {
     res.status(400).json('Must use a valid contact id to fine a flower instance')
   }
   const flowerId = new ObjectId(req.params.id);
-  const result = await mongodb.getDb().db('flowerdb').collection('zone9flowers').find({ _id: flowerId });
+  const result = await mongodb.getDb().db('flowerdb').collection('flowers').find({ _id: flowerId });
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     //res.setHeader('Content-Type', 'text/plain');
@@ -41,7 +41,7 @@ const createFlower = async (req, res) => {
     zipcode: req.body.zipcode
   };
   console.log(req.body);
-  const response = await mongodb.getDb().db('flowerdb').collection('zone9flowers').insertOne(flower);
+  const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
     if (response.acknowledged) {
       res.status(201).json(response);
       res.setHeader('Content-Type', 'text/plain');
@@ -72,7 +72,7 @@ const updateFlower = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('flowerdb')
-    .collection('zone9flowers')
+    .collection('flowers')
     .replaceOne({ _id: flowerId }, flower);
     console.log(response);
     if (response.modifiedCount > 0) {
@@ -91,7 +91,7 @@ const deleteFlower = async (req, res) => {
   const response = await mongodb
     .getDb()
     .db('flowerdb')
-    .collection('zone9flowers')
+    .collection('flowers')
     .deleteOne({ _id: flowerId }, true);
   console.log(response);
   if (response.deletedCount > 0) {

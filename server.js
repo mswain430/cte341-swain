@@ -1,8 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
-const dotenv = require('dotenv')
-dotenv.config()
 //const professionalRoutes = require('./routes/professional');
 //const contactsRoutes = require('./routes/contacts');
 //const contactsRoutes = require('./routes/gardenerContacts');
@@ -12,6 +10,11 @@ const cors = require('cors');
 
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
+
+.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
+.use(cors({
+origin: '*'
+})); 
 
 app
   //.use('contacts', require('./routes').default);
@@ -32,11 +35,6 @@ app
     next()
   })
  
-  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
-  .use(cors({
-  origin: '*'
-  })); 
-
  process.on('uncaughtException', (err, origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
  }); 

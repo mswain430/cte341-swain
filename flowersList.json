@@ -5,10 +5,11 @@
     "img": "img/pic1.webp",
     "desc": "Geraniums will grow in any soil as long as it is not waterlogged.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9a",
     "droughtTolerant": "yes",
     "bloomTime": "year around",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92128"
     },
     {
     "flowerName": "Petunia",
@@ -16,10 +17,11 @@
     "img": "img/pic2.webp",
     "desc": "Petunias can tolerate relatively harsh conditions and hot climates, but not frost.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9a",
     "droughtTolerant": "no",
     "bloomTime": "Springtime after frost",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92127"
      },
      {
     "flowerName": "Hydrangea",
@@ -27,10 +29,11 @@
     "img": "img/pic3.webp",
     "desc": "Hydrangea flowers are produced from early spring to late autumn.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9a",
     "droughtTolerant": "no",
     "bloomTime": "Springtime after frost",
-    "exposure": "partial shade"
+    "exposure": "partial shade",
+    "zipcode": "92128"
     },
     {
      "flowerName": "Delosperma_cooperi",
@@ -38,10 +41,11 @@
     "img": "img/pic4.webp",
     "desc": "The flowers are the most brilliant aspect of this plant.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9a",
     "droughtTolerant": "yes",
     "bloomTime": "late winter, early spring",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92127"
      },
     {
     "flowerName": "Rose",
@@ -49,20 +53,22 @@
     "img": "img/pic7.webp",
     "desc": "Roses are best known as ornamental plants grown for their flowers.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "no",
     "bloomTime": "dorment during winter",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
     },    {
      "flowerName": "Begonia",
     "family": "Begonia",
     "img": "img/pic13.webp",
     "desc": "Description here",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "no",
     "bloomTime": "avoid freezing temps",
-    "exposure": "full sun or partial shade"
+    "exposure": "full sun or partial shade",
+    "zipcode": "92064"
     },
     {
      "flowerName": "Antirrhinum",
@@ -70,10 +76,11 @@
     "img": "img/pic15.webp",
     "desc": "Snapdragons are short-lived perennial plants, but are often replanted each spring and considered annual plants. full or partial sun, well-drained soil",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "no",
     "bloomTime": "Springtime",
-    "exposure": "full sun or partial shade"
+    "exposure": "full sun or partial shade",
+    "zipcode": "92064"
     },
     {
     "flowerName": "Rose",
@@ -81,10 +88,11 @@
     "img": "img/pic16.webp",
     "desc": "Roses are best known as ornamental plants grown for their flowers.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "no",
     "bloomTime": "year around",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
      },
      {
      "flowerName": "Succulent",
@@ -92,10 +100,11 @@
     "img": "img/pic17.webp",
     "desc": "Succulents have the ability to thrive on limited water sources, such as mist and dew.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "yes",
     "bloomTime": "year around",
-    "exposure": "full sun/partial shade"
+    "exposure": "full sun/partial shade",
+    "zipcode": "92064"
     },
     {
     "flowerName": "Geranium",
@@ -103,10 +112,11 @@
     "img": "img/pic18.webp",
     "desc": "Geraniums will grow in any soil as long as it is not waterlogged(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "yes",
     "bloomTime": "year around",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
      },
      {
     "flowerName": "Delosperma_cooperi",
@@ -114,10 +124,11 @@
     "img": "img/pic19.webp",
     "desc": "The flowers are the most brilliant aspect of this plant.(wiki)",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "yes",
     "bloomTime": "Early Spring",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
     },
     {
     "flowerName": "Osteospermum",
@@ -125,9 +136,10 @@
     "img": "img/pic20.webp",
     "desc": "Plants prefer a warm and sunny position and rich soil, they tolerate poor soil, salt or drought well.",
     "location": "San Diego, California",
-    "zone": "long-lat",
+    "zone": "9b",
     "droughtTolerant": "yes",
     "bloomTime": "Early Spring",
-    "exposure": "full sun"
+    "exposure": "full sun",
+    "zipcode": "92064"
      }
 ]
