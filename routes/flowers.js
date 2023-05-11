@@ -7,11 +7,11 @@ const validation = require('../middleware/validate')
 
 routes.get('/', flowerController.getAll);
 
-routes.get('flowers:id', flowerController.getSingle); 
+routes.get('/:id', flowerController.getSingle); 
 
 routes.post('/', validation.saveFlower, flowerController.createFlower);
 
-routes.put('/:id', flowerController.updateFlower);
+routes.put('/:id', validation.saveFlower, flowerController.updateFlower);
 
 routes.delete('/:id', flowerController.deleteFlower);
 

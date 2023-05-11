@@ -1,18 +1,19 @@
 const express = require('express');
 const routes = express.Router();
-const validation = require('../middleware/validate')
 
 const contactsController = require('../controllers/gardenerContacts');
+const validation = require('../middleware/validate')
+
 
 //routes.get('/', contactsController.getData);
 
 routes.get('/', contactsController.getAll);
 
-routes.get('contacts:id', contactsController.getSingle);  // change 5/10/23 contacts:id
+routes.get('/:id', contactsController.getSingle);  
 
 routes.post('/', validation.saveContact, contactsController.createContact);
 
-routes.put('/:id', contactsController.updateContact);
+routes.put('/:id', validation.saveContact, contactsController.updateContact);
 
 routes.delete('/:id', contactsController.deleteContact);
 
