@@ -16,7 +16,7 @@ const userValidationRules = () => {
     body('zipcode').isInt().isLength({max: 5})
   ]
 }
-const { userValidationRules, validate } = require('./validator.js')
+//const { userValidationRules, validate } = require('./validator.js')
 app.post('/user', userValidationRules(), validate, (req, res) => {
   User.create({
     username: req.body.username,

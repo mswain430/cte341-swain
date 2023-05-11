@@ -6,7 +6,7 @@ routes.use('/', require('./swagger'));
 //routes.use('/contacts', require('./contacts'));
 //routes.use('/templess', require('./temples'));
 routes.use('flowers', require('./flowers'));
-routes.use('validator', require('./validator') )
+//routes.use('validator', require('./validator') )
 routes.use('gardenerContacts', require('./gardenerContacts'))
 
 routes.use(
