@@ -15,9 +15,9 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
-  if(!ObjectId.isValid(req.params.id)){
-    res.status(400).json('Must use a valid contact id to fine a flower instance')
-  }
+ // if(!ObjectId.isValid(req.params.id)){
+ //   res.status(400).json('Must use a valid contact id to fine a flower instance')
+ // }
   const flowerId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db('flowerdb').collection('flowers').find({ _id: flowerId });
   result.toArray().then((lists) => {
@@ -42,20 +42,20 @@ const createFlower = async (req, res) => {
   };
   console.log(req.body);
   const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
-    if (response.acknowledged) {
-      res.status(201).json(response);
-      res.setHeader('Content-Type', 'text/plain');
-      } else {
-        res.status(500).json(response.error || 'Some error occurred while creating contact');
-      }
+  if (response.acknowledged) {
+    res.status(201).json(response);
+    res.setHeader('Content-Type', 'text/plain');
+  } else {
+    res.status(500).json(response.error || 'Some error occurred while creating contact');
+  }
  };
 
 
 const updateFlower = async (req, res) => {
-  if(!ObjectId.isValid(req.params.id)){
-    res.status(400).json('Must use a valid contact id to fine a flower instance')
-  }
-   const flowerId = new ObjectId(req.params.id);
+ // if(!ObjectId.isValid(req.params.id)){
+ //   res.status(400).json('Must use a valid contact id to fine a flower instance')
+ // }
+  const flowerId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const flower = {
     flowerName: req.body.flowerName,
@@ -83,16 +83,12 @@ const updateFlower = async (req, res) => {
   };
 
 const deleteFlower = async (req, res) => {
-  if(!ObjectId.isValid(req.params.id)){
-    res.status(400).json('Must use a valid contact id to fine a flower instance')
-  } 
+  //if(!ObjectId.isValid(req.params.id)){
+  //  res.status(400).json('Must use a valid contact id to fine a flower instance')
+  //} 
   try {
   const flowerId = new ObjectId(req.params.id);
-  const response = await mongodb
-    .getDb()
-    .db('flowerdb')
-    .collection('flowers')
-    .deleteOne({ _id: flowerId }, true);
+  const response = await mongodb.getDb().db('flowerdb').collection('flowers').deleteOne({ _id: flowerId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
