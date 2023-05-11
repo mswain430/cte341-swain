@@ -11,10 +11,7 @@ const cors = require('cors');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
-.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
-.use(cors({
-origin: '*'
-})); 
+
 
 app
   //.use('contacts', require('./routes').default);
@@ -23,6 +20,10 @@ app
   //.use('/gardenerContacts', require('./gardenderContacts'))
   //.get('/gardenerContacts', contactsRoutes)
   .use('/', require('./routes'))
+  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
+  .use(cors({ 
+    origin: '*'
+    }))
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use('/', bodyParser.json()) 
   .use(bodyParser.urlencoded({ extended: false }))

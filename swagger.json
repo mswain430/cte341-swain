@@ -5,7 +5,7 @@
     "description": "Flowers API",
     "version": "1.0.0"
   },
-  "host": "swain341-test.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
     "http"
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-      "/flowers": {
+    "flowers/": {
       "get": {
         "description": "",
         "produces": [
@@ -163,7 +163,7 @@
                 "zipcode": {
                   "example": "92064"
                 }
-              }
+               }
             }
           }
         ],

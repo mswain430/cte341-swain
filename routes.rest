@@ -13,7 +13,7 @@ GET http://localhost:8080/flowers
 
 ###
 
-POST http://localhost:8080/zone9flowers HTTP/1.1
+POST http://localhost:8080/flowers HTTP/1.1
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-POST http://localhost:8080/zone9flowers HTTP/1.1
+POST http://localhost:8080/flowers HTTP/1.1
 Content-Type: application/json
 
 {
@@ -49,7 +49,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-POST http://localhost:8080/zone9flowers HTTP/1.1
+POST http://localhost:8080/flowers HTTP/1.1
 
 {
    "flowerName": "Martha Washington Geranium",
@@ -66,7 +66,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-PUT http://localhost:8080/zone9flowers/645ab515e455fddacdaa6c02  HTTP/1.1
+PUT http://localhost:8080/flowers/645ab515e455fddacdaa6c02  HTTP/1.1
 Content-Type: application/json
 
 {
@@ -141,11 +141,11 @@ GET https://swain341-test.onrender.com
 
 ###
 
-https://swain341-test.onrender.com/zone9flowers
+https://swain341-test.onrender.com/flowers
 
 ###
 
-POST https://swain341-test.onrender.com/zone9flowers HTTP/1.1
+POST https://swain341-test.onrender.com/lowers HTTP/1.1
 Content-Type: application/json
 
 {
@@ -164,7 +164,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ###
 
-PUT https://swain341-test.onrender.com/zone9flowers/64596ab0550959d7b4b0ebc1 HTTP/1.1
+PUT https://swain341-test.onrender.com/flowers/64596ab0550959d7b4b0ebc1 HTTP/1.1
 Content-Type: application/json
 
 {
@@ -182,7 +182,7 @@ Content-Type: application/json
 
 ###
 
-DELETE https://swain341-test.onrender.com/zone9flowers/645ab176c0b829b8d7468604 HTTP/1.1
+DELETE https://swain341-test.onrender.com/flowers/645ab176c0b829b8d7468604 HTTP/1.1
 Content-Type: application/json
 
 
