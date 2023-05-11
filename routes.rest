@@ -141,7 +141,7 @@ GET https://swain341-test.onrender.com
 
 ###
 
-https://swain341-test.onrender.com/flowers
+https://swain341-test.onrender.com/zone9flowers
 
 ###
 
@@ -191,7 +191,7 @@ Content-Type: application/json
 
 ###
 
-GET https://swain341-test.onrender.com/gardenContacts
+GET https://swain341-test.onrender.com/contacts
 
 ###
 
