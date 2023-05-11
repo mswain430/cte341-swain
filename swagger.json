@@ -18,7 +18,8 @@
         "responses": {}
       }
     },
-    "/flowers/": {
+    //#Flowers
+    "/flowers": {
       "get": {
         "description": "",
         "produces": [
@@ -53,28 +54,28 @@
                   "example": "any"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "annual/perineal"
                 },
                 "img": {
-                  "example": "any"
+                  "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "any"
+                  "example": "San Diego, CA"
                 },
                 "droughtTolerant": {
-                  "example": "any"
+                  "example": "yes/no"
                 },
                 "bloomTime": {
-                  "example": "any"
+                  "example": "Spring/Summer/Fall/Winter"
                 },
                 "exposure": {
-                  "example": "any"
+                  "example": "Full Sun/Partial Shade/Shade"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": "92064"
                 }
               }
             }
@@ -93,7 +94,7 @@
         }
       }
     },
-    "/{flowers/flowersid}": {
+    "/{flowers/flowerid}": {
       "get": {
         "description": "",
         "produces": [
@@ -101,7 +102,7 @@
         ],
         "parameters": [
           {
-            "name": "flowersid",
+            "name": "flowerid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -136,32 +137,32 @@
                 "flowerName": {
                   "example": "any"
                 },
-                "family": {
+                "famiy": {
                   "example": "any"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "annual/perineal"
                 },
                 "img": {
-                  "example": "any"
+                  "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "any"
+                  "example": "San Diego, CA"
                 },
                 "droughtTolerant": {
-                  "example": "any"
+                  "example": "yes/no"
                 },
                 "bloomTime": {
-                  "example": "any"
+                  "example": "Spring/Summer/Fall/Winter"
                 },
                 "exposure": {
-                  "example": "any"
+                  "example": "Full Sun/Partial Shade/Shade"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": "92064"
                 }
               }
             }
@@ -202,7 +203,8 @@
         }
       }
     },
-    "gardenerContacts": {
+    //#Gardeners 
+    "contacts": {
       "get": {
         "description": "",
         "produces": [
@@ -265,7 +267,7 @@
         }
       }
     },
-    "gardenerContacts/{id}": {
+    "/contacts/{id}": {
       "put": {
         "description": "",
         "parameters": [
