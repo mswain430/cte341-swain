@@ -4,7 +4,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
   try {
-  const result = await mongodb.getDb().db('flowerdb').collection('flowers').find();
+  const result = await mongodb.getDb().db().collection('flowers').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
