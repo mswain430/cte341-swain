@@ -55,10 +55,10 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
-  try {
   if(!ObjectId.isValid(req.params.id)){
     res.status(400).json('Must use a valid contact id to fine a flower instance')
   }
+  try {
   const userId = new ObjectId(req.params.id);
   // be aware of updateOne if you only want to update specific fields
   const contact = {
