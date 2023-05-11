@@ -20,10 +20,7 @@ app
   //.use('/gardenerContacts', require('./gardenderContacts'))
   //.get('/gardenerContacts', contactsRoutes)
   .use('/', require('./routes'))
-  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
-  .use(cors({ 
-    origin: '*'
-    }))
+
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use('/', bodyParser.json()) 
   .use(bodyParser.urlencoded({ extended: false }))
@@ -35,7 +32,11 @@ app
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next()
   })
- 
+  app.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
+  app.use(cors({ 
+    origin: '*'
+    }))
+    
  process.on('uncaughtException', (err, origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
  }); 
