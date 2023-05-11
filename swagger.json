@@ -93,7 +93,7 @@
         }
       }
     },
-    "/{flowersflowersid}": {
+    "/{flowers/flowersid}": {
       "get": {
         "description": "",
         "produces": [
@@ -101,7 +101,7 @@
         ],
         "parameters": [
           {
-            "name": "flowersflowersid",
+            "name": "flowersid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -202,7 +202,7 @@
         }
       }
     },
-    "gardenerContacts/": {
+    "gardenerContacts": {
       "get": {
         "description": "",
         "produces": [
