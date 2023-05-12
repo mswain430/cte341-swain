@@ -20,7 +20,7 @@ app
   //.get('/gardenerContacts', contactsRoutes)
   .use('/', require('./routes'))
 
-  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+  //.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
   .use('/', bodyParser.json()) 
   .use(bodyParser.urlencoded({ extended: false }))
   .use((req, res, next) => {
