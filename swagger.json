@@ -23,7 +23,6 @@
   "paths": {
     "/api-docs": {
       "get": {
-        "tags": ["Flowers"],
         "summary": "Finds Flowers by name",
         "description": "Each Flower has a not so unique name, a type, a family, exposure, bloomTime, zone, this will find all flowers by your specified criteria",
         "parameters": [],
@@ -32,6 +31,7 @@
     },
     "/flowers": {
       "get": {
+        "tags": ["Flowers"],
         "description": "",
         "produces": [
           "application/json"
@@ -47,6 +47,7 @@
         }
       },
       "post": {
+        "tags": ["Flowers"],
         "description": "Add a New Flower",
         "produces": [
           "application/json"
@@ -107,6 +108,7 @@
     },
     "//flowers/{id}": {
       "get": {
+        "tags": ["Flowers"],
         "description": "",
         "produces": [
           "application/json"
@@ -132,6 +134,7 @@
         }
       },
       "put": {
+        "tags": ["Flowers"],
         "description": "",
         "parameters": [
           {
@@ -196,6 +199,7 @@
         }
       },
       "delete": {
+        "tags": ["Flowers"],
         "description": "",
         "parameters": [
           {
@@ -220,6 +224,7 @@
     },
     "/contacts": {
       "get": {
+        "tags": ["Gardener Contacts"],
         "description": "",
         "produces": [
           "application/json"
@@ -235,6 +240,7 @@
         }
       },
       "post": {
+        "tags": ["Gardener Contacts"],
         "description": "",
         "produces": [
           "application/json"
@@ -283,6 +289,7 @@
     },
     "/contacts/{id}": {
       "get": {
+        "tags": ["Gardener Contacts"],
         "description": "",
         "produces": [
           "application/json"
@@ -308,6 +315,7 @@
         }
       },
       "put": {
+        "tags": ["Gardener Contacts"],
         "description": "",
         "parameters": [
           {
@@ -360,6 +368,7 @@
         }
       },
       "delete": {
+        "tags": ["Gardener Contacts"],
         "description": "",
         "parameters": [
           {
