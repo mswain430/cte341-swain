@@ -2,11 +2,21 @@
   "swagger": "2.0",
   "info": {
     "title": "Millies Backyard Flowers",
-    "description": "Flowers API",
+    "description": "Garden Club Flowers API",
     "version": "1.0.0"
   },
   "host": "swain341-test.onrender.com",
   "basePath": "/",
+  "tags": [
+    {
+      "name": "flowers",
+      "description": "Showcase your backyard flowers"
+    },
+    {
+      "name": "Contacts",
+      "description": "Garden Club Memberships"
+    }
+  ],
   "schemes": [
     "https"
   ],
@@ -18,7 +28,7 @@
         "responses": {}
       }
     },
-    "/flowers/": {
+    "/flowers": {
       "get": {
         "description": "",
         "produces": [
@@ -35,7 +45,7 @@
         }
       },
       "post": {
-        "description": "",
+        "description": "Add a New Flower",
         "produces": [
           "text/plain"
         ],
@@ -93,7 +103,7 @@
         }
       }
     },
-    "/flowers/{id}": {
+    "//flowers/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -113,6 +123,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -138,28 +151,28 @@
                   "example": "any"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "annual/perinneal"
                 },
                 "img": {
-                  "example": "any"
+                  "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "any"
+                  "example": "San Diego, CA"
                 },
                 "droughtTolerant": {
-                  "example": "any"
+                  "example": "yes/no"
                 },
                 "bloomTime": {
-                  "example": "any"
+                  "example": "Spring/Summer/Fall/Winter"
                 },
                 "exposure": {
-                  "example": "any"
+                  "example": "full sun/partial shade/shade"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": "92064"
                 }
               }
             }
@@ -168,6 +181,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "412": {
             "description": "Precondition Failed"
@@ -191,13 +207,16 @@
           "204": {
             "description": "No Content"
           },
+          "400": {
+            "description": "Bad Request"
+          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       }
     },
-    "/contacts/": {
+    "/contacts": {
       "get": {
         "description": "",
         "produces": [
@@ -311,13 +330,13 @@
                   "example": "any"
                 },
                 "email": {
-                  "example": "any"
+                  "example": "test@tester.com"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": "92064"
                 },
                 "cellphone": {
-                  "example": "any"
+                  "example": "8585555555"
                 }
               }
             }
