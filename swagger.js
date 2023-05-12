@@ -2,10 +2,10 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: "Garden CLub API",
+    title: "Garden Club API",
     description: "Garden Club API",
     title: "Millies Backyard Flowers",
-    description: "Flowers API"
+    description: "Garden Club Flowers API"
   },
   host: "swain341-test.onrender.com",
   schemes: ["https"],
