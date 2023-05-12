@@ -24,7 +24,47 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [ ],
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "flowerName": {
+                  "example": "any"
+                },
+                "famiy": {
+                  "example": "any"
+                },
+                "type": {
+                  "example": "any"
+                },
+                "img": {
+                  "example": "any"
+                },
+                "desc": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "droughtTolerant": {
+                  "example": "any"
+                },
+                "bloomTime": {
+                  "example": "any"
+                },
+                "exposure": {
+                  "example": "any"
+                },
+                "zipcode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],,
         "responses": {
           "200": {
             "description": "OK"
