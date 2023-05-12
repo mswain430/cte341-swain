@@ -6,7 +6,7 @@ async function apiFetch(url) {
 }
 
 const getData = async () => {
-  const data = await apiFetch('swain341-test.onrender.com/flowers');
+  const data = await apiFetch('https://swain341-test.onrender.com/flowers');
   displayAllData(data);
   };
   
