@@ -71,7 +71,7 @@ const updateFlower = async (req, res) => {
   };
   const response = await mongodb
     .getDb()
-    .db('flowerdb')
+    .db()
     .collection('flowers')
     .replaceOne({ _id: flowerId }, flower);
     console.log(response);
@@ -88,7 +88,7 @@ const deleteFlower = async (req, res) => {
   //} 
   try {
   const flowerId = new ObjectId(req.params.id);
-  const response = await mongodb.getDb().db('flowerdb').collection('flowers').deleteOne({ _id: flowerId }, true);
+  const response = await mongodb.getDb().db().collection('flowers').deleteOne({ _id: flowerId }, true);
   console.log(response);
   if (response.deletedCount > 0) {
     res.status(204).send();
