@@ -15,10 +15,11 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+  try {
   if(!ObjectId.isValid(req.params.id)){
   res.status(400).json('Must use a valid contact id to fine a flower instance')
   }
-  try {
+  
   const flowerId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('flowers').find({ _id: flowerId });
   result.toArray().then((lists) => {
@@ -32,21 +33,21 @@ const getSingle = async (req, res) => {
   };
 
 const createFlower = async (req, res) => {
-  try{
-  const flower = {
-    flowerName: req.body.flowerName,
-    family: req.body.famiy,
-    type: req.body.type,
-    img: req.body.img,
-    desc: req.body.desc,
-    location: req.body.location,
-    droughtTolerant: req.body.droughtTolerant,
-    bloomTime: req.body.bloomTime,
-    exposure: req.body.exposure,
-    zipcode: req.body.zipcode
-  };
-  console.log(req.body);
-  const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
+  try {
+    const flower = {
+      flowerName: req.body.flowerName,
+      family: req.body.famiy,
+      type: req.body.type,
+      img: req.body.img,
+      desc: req.body.desc,
+      location: req.body.location,
+      droughtTolerant: req.body.droughtTolerant,
+      bloomTime: req.body.bloomTime,
+      exposure: req.body.exposure,
+      zipcode: req.body.zipcode
+    };
+    console.log(req.body);
+    const response = await mongodb.getDb().db().collection('flowers').insertOne(flower);
     if (response.acknowledged) {
       res.status(201).json(response);
       res.setHeader('Content-Type', 'text/plain');
@@ -59,39 +60,39 @@ const createFlower = async (req, res) => {
  };
 
 const updateFlower = async (req, res) => {
- if(!ObjectId.isValid(req.params.id)){
-  res.status(400).json('Must use a valid contact id to fine a flower instance')
- }
  try {
-  const flowerId = new ObjectId(req.params.id);
-  // be aware of updateOne if you only want to update specific fields
-  const flower = {
-    flowerName: req.body.flowerName,
-    family: req.body.family,
-    type: req.body.type,
-    img: req.body.img,
-    desc: req.body.desc,
-    location: req.body.location,
-    droughtTolerant: req.body.droughtTolerant,
-    bloomTime: req.body.bloomTime,
-    exposure: req.body.exposure,
-    zipcode: req.body.zipcode
-  };
-  const response = await mongodb
-    .getDb()
-    .db()
-    .collection('flowers')
-    .replaceOne({ _id: flowerId }, flower);
-    console.log(response);
-    if (response.modifiedCount > 0) {
-      res.status(204).send();
-      } else {
-        res.status(500).json(response.error || 'Some error occurred while updating the contact.');
-      }
-    } catch (err) {
-      res.status(500).json({err})
-    }
-  };
+    if(!ObjectId.isValid(req.params.id)){
+    res.status(400).json('Must use a valid contact id to fine a flower instance')
+  }
+    const flowerId = new ObjectId(req.params.id);
+    // be aware of updateOne if you only want to update specific fields
+    const flower = {
+      flowerName: req.body.flowerName,
+      family: req.body.family,
+      type: req.body.type,
+      img: req.body.img,
+      desc: req.body.desc,
+      location: req.body.location,
+      droughtTolerant: req.body.droughtTolerant,
+      bloomTime: req.body.bloomTime,
+      exposure: req.body.exposure,
+      zipcode: req.body.zipcode
+    };
+    const response = await mongodb
+      .getDb()
+      .db()
+      .collection('flowers')
+      .replaceOne({ _id: flowerId }, flower);
+      console.log(response);
+      if (response.modifiedCount > 0) {
+        res.status(204).send();
+        } else {
+          res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+        }
+  } catch (err) {
+    res.status(500).json({err})
+  }
+};
 
 const deleteFlower = async (req, res) => {
   if(!ObjectId.isValid(req.params.id)){

@@ -39,7 +39,8 @@ const createContact = async (req, res) => {
     address: req.body.address,
     email: req.body.email,
     zipcode: req.body.zipcode,
-    cellphone: req.body.cellphone
+    cellphone: req.body.cellphone,
+    zone: req.body.zone
   };
   console.log(req.body);
   const response = await mongodb.getDb().db().collection('contacts').insertOne(contact);
@@ -55,53 +56,54 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
-  if(!ObjectId.isValid(req.params.id)){
+  try {
+    if(!ObjectId.isValid(req.params.id)){
     res.status(400).json('Must use a valid contact id to fine a flower instance')
   }
-  try {
-  const userId = new ObjectId(req.params.id);
-  // be aware of updateOne if you only want to update specific fields
-  const contact = {
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
-    address: req.body.address,
-    email: req.body.email,
-    zipcode: req.body.zipcode,
-    cellphone: req.body.cellphone
-  };
-  const response = await mongodb
-    .getDb()
-    .db('flowerdb')
-    .collection('contacts')
-    .replaceOne({ _id: userId }, contact);
-    console.log(response);
-    if (response.modifiedCount > 0) {
-      res.status(204).send();
+    const userId = new ObjectId(req.params.id);
+    // be aware of updateOne if you only want to update specific fields
+    const contact = {
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      address: req.body.address,
+      email: req.body.email,
+      zipcode: req.body.zipcode,
+      cellphone: req.body.cellphone,
+      zone: req.body.zone
+    };
+    const response = await mongodb
+      .getDb()
+      .db()
+      .collection('contacts')
+      .replaceOne({ _id: userId }, contact);
+      console.log(response);
+      if (response.modifiedCount > 0) {
+        res.status(204).send();
       } else {
-        res.status(500).json(response.error || 'Some error occurred while updating the contact.');
-      }
-      } catch (err) {
+          res.status(500).json(response.error || 'Some error occurred while updating the contact.');
+        }
+  } catch (err) {
         res.status(500).json({err})
-  }
-  };
+   }
+};
 
 const deleteContact = async (req, res) => {
   try {
-  if(!ObjectId.isValid(req.params.id)){
-    res.status(400).json('Must use a valid contact id to fine a flower instance')
-  }
-  const userId = new ObjectId(req.params.id);
-  const response = await mongodb
-    .getDb()
-    .db('flowerdb')
-    .collection('contacts')
-    .deleteOne({ _id: userId }, true);
-  console.log(response);
-  if (response.deletedCount > 0) {
-    res.status(204).send();
-    } else {
-      res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+    if(!ObjectId.isValid(req.params.id)){
+      res.status(400).json('Must use a valid contact id to fine a flower instance')
     }
+    const userId = new ObjectId(req.params.id);
+    const response = await mongodb
+      .getDb()
+      .db()
+      .collection('contacts')
+      .deleteOne({ _id: userId }, true);
+    console.log(response);
+    if (response.deletedCount > 0) {
+      res.status(204).send();
+      } else {
+        res.status(500).json(response.error || 'Some error occurred while deleting the contact.');
+      }
   } catch (err) {
   res.status(500).json({err});
   }
