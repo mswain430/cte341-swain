@@ -9,10 +9,8 @@ const port = process.env.PORT || 8080;
 const app = express();
 const cors = require('cors');
 
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
-
-
+//const swaggerUi = require('swagger-ui-express');
+//const swaggerDocument = require('./swagger.json');
 
 app
   //.use('contacts', require('./routes').default);

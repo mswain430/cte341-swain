@@ -15,9 +15,9 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
- // if(!ObjectId.isValid(req.params.id)){
- //   res.status(400).json('Must use a valid contact id to fine a flower instance')
- // }
+  if(!ObjectId.isValid(req.params.id)){
+  res.status(400).json('Must use a valid contact id to fine a flower instance')
+  }
   const flowerId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db('flowerdb').collection('flowers').find({ _id: flowerId });
   result.toArray().then((lists) => {
@@ -41,7 +41,7 @@ const createFlower = async (req, res) => {
     zipcode: req.body.zipcode
   };
   console.log(req.body);
-  const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
+  const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne('flower');
   if (response.acknowledged) {
     res.status(201).json(response);
     res.setHeader('Content-Type', 'text/plain');
