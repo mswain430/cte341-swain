@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/flowers": {
+    "flowers/": {
       "get": {
         "description": "",
         "produces": [
@@ -53,28 +53,28 @@
                   "example": "any"
                 },
                 "type": {
-                  "example": "annual/perineal"
+                  "example": "any"
                 },
                 "img": {
-                  "example": "img/1.jpg"
+                  "example": "any"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "San Diego, CA"
+                  "example": "any"
                 },
                 "droughtTolerant": {
-                  "example": "yes/no"
+                  "example": "any"
                 },
                 "bloomTime": {
-                  "example": "Spring/Summer/Fall/Winter"
+                  "example": "any"
                 },
                 "exposure": {
-                  "example": "Full Sun/Partial Shade/Shade"
+                  "example": "any"
                 },
                 "zipcode": {
-                  "example": "92064"
+                  "example": "any"
                 }
               }
             }
@@ -93,7 +93,7 @@
         }
       }
     },
-    "/flowers/flowerid": {
+    "flowers/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -101,7 +101,7 @@
         ],
         "parameters": [
           {
-            "name": "flowerid",
+            "name": "id",
             "in": "path",
             "required": true,
             "type": "string"
@@ -110,14 +110,9 @@
         "responses": {
           "200": {
             "description": "OK"
-          },
-          "400": {
-            "description": "Bad Request"
           }
         }
-      }
-    },
-    "/flowers/{id}": {
+      },
       "put": {
         "description": "",
         "parameters": [
@@ -136,34 +131,34 @@
                 "flowerName": {
                   "example": "any"
                 },
-                "famiy": {
+                "family": {
                   "example": "any"
                 },
                 "type": {
-                  "example": "annual/perineal"
+                  "example": "any"
                 },
                 "img": {
-                  "example": "img/1.jpg"
+                  "example": "any"
                 },
                 "desc": {
                   "example": "any"
                 },
                 "location": {
-                  "example": "San Diego, CA"
+                  "example": "any"
                 },
                 "droughtTolerant": {
-                  "example": "yes/no"
+                  "example": "any"
                 },
                 "bloomTime": {
-                  "example": "Spring/Summer/Fall/Winter"
+                  "example": "any"
                 },
                 "exposure": {
-                  "example": "Full Sun/Partial Shade/Shade"
+                  "example": "any"
                 },
                 "zipcode": {
-                  "example": "92064"
+                  "example": "any"
                 }
-               }
+              }
             }
           }
         ],
@@ -171,8 +166,8 @@
           "204": {
             "description": "No Content"
           },
-          "400": {
-            "description": "Bad Request"
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -193,16 +188,13 @@
           "204": {
             "description": "No Content"
           },
-          "400": {
-            "description": "Bad Request"
-          },
           "500": {
             "description": "Internal Server Error"
           }
         }
       }
     },
-    "/contacts": {
+    "contacts/": {
       "get": {
         "description": "",
         "produces": [
@@ -265,7 +257,32 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "contacts/{id}": {
+      "get": {
+        "description": "",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
       "put": {
         "description": "",
         "parameters": [
@@ -309,6 +326,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
