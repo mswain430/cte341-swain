@@ -20,7 +20,7 @@ const userValidationRules = () => {
     body('type').isString(),
     body('img').isURL(),
     body('location').isString(),
-    body('droughtTolerant').isBoolean(),
+    body('droughtTolerant').isString(),
     body('bloomTime').isString(),
     body('exposure').isString(),
   ]

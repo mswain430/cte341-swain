@@ -192,6 +192,7 @@ Content-Type: application/json
 ###
 
 GET https://swain341-test.onrender.com/contacts
+Content-Type: application/json
 
 ###
 

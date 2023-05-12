@@ -47,7 +47,7 @@
       "post": {
         "description": "Add a New Flower",
         "produces": [
-          "text/plain"
+          "application/json"
         ],
         "parameters": [
           {
@@ -235,7 +235,7 @@
       "post": {
         "description": "",
         "produces": [
-          "text/plain"
+          "application/json"
         ],
         "parameters": [
           {
