@@ -6,7 +6,7 @@ async function apiFetch(url) {
 }
 
 const getData = async () => {
-  const data = await apiFetch('http://localhost:8080/flowers');
+  const data = await apiFetch('swain341-test.onrender.com/flowers');
   displayAllData(data);
   };
   
@@ -31,7 +31,7 @@ function displayflowerFamily(data) {
   family.innerHTML = data;
 }
 
-function displayflowerImg(data) {
+function displayflowerImg() {
   let flowerImg = document.getElementById('img');
   flowerImg.innerHTML = `<img src="{$img}" alt="{$flowerName}" `;
 } 
