@@ -5,10 +5,10 @@
     "description": "Flowers API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",  
+  "host": "swain341-test.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
