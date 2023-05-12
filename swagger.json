@@ -9,11 +9,11 @@
   "basePath": "/",
   "tags": [
     {
-      "name": "flowers",
+      "name": "Flowers",
       "description": "Showcase your backyard flowers"
     },
     {
-      "name": "Contacts",
+      "name": "Gardener Contacts",
       "description": "Garden Club Memberships"
     }
   ],
@@ -23,7 +23,9 @@
   "paths": {
     "/api-docs": {
       "get": {
-        "description": "",
+        "tags": ["Flowers"],
+        "summary": "Finds Flowers by name",
+        "description": "Each Flower has a not so unique name, a type, a family, exposure, bloomTime, zone, this will find all flowers by your specified criteria",
         "parameters": [],
         "responses": {}
       }
