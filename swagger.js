@@ -7,7 +7,7 @@ const doc = {
     title: 'Millies Backyard Flowers',
     description: 'Flowers API'
   },
-  host: 'swain341-test.onrender.com',
+  host: "swain341-test.onrender.com",
   schemes: ['https'],
 };
 
