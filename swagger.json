@@ -18,13 +18,13 @@
         "responses": {}
       }
     },
-    "flowers/": {
+    "/flowers": {
       "get": {
         "description": "",
         "produces": [
           "application/json"
         ],
-        "parameters": [],
+        "parameters": [ ],
         "responses": {
           "200": {
             "description": "OK"
@@ -93,7 +93,7 @@
         }
       }
     },
-    "flowers/{id}": {
+    "/flowers/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -194,7 +194,7 @@
         }
       }
     },
-    "contacts/": {
+    "/contacts/": {
       "get": {
         "description": "",
         "produces": [
@@ -257,7 +257,7 @@
         }
       }
     },
-    "contacts/{id}": {
+    "/contacts/{id}": {
       "get": {
         "description": "",
         "produces": [

@@ -1,0 +1,497 @@
+[
+  {
+    "zipcode": 97476,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 32114,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 98595,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 29401,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 98687,
+    "zone": "8b",
+    "trange": "15 to 20"
+  },
+  {
+    "zipcode": 27915,
+    "zone": "8b",
+    "trange": "15 to 20"
+  },
+  {
+    "zipcode": 98675,
+    "zone": "8a",
+    "trange": "10 to 15"
+  },
+  {
+    "zipcode": 21817,
+    "zone": "8a",
+    "trange": "10 to 15"
+  },
+  {
+    "zipcode": 33001,
+    "zone": "11a",
+    "trange": "40 to 45"
+  },
+  {
+    "zipcode": 95044,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 33002,
+    "zone": "10b",
+    "trange":"35 to 40"
+  },
+  {
+    "zipcode": 95525,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 32903,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92276,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92275,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92274,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92270,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92264,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92263,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92262,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92260,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92259,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92258,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92257,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92255,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92254,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92253,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92248,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92247,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92242,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92241,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92240,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92236,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92235,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92234,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92233,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92227,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92226,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92225,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92211,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92210,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92203,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92202,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92201,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92159,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92145,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92127,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92082,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92064,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92061,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92059,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92046,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92033,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92030,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92027,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92004,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92117,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92118,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92119,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92120,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92121,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92122,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92123,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92124,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92126,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92127,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92128,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92129,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92130,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92131,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92132,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92134,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92135,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92136,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92137,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92138,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92139,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92140,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92142,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92143,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92145,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92147,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92149,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92150,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92152,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92153,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92154,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92155,
+    "zone": "10b",
+    "trange": "35 to 40"
+  },
+  {
+    "zipcode": 92158,
+    "zone": "10a",
+    "trange": "30 to 35"
+  },
+  {
+    "zipcode": 92159,
+    "zone": "9b",
+    "trange": "25 to 30"
+  },
+  {
+    "zipcode": 92220,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92223,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92230,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92252,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92256,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92261,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92277,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92278,
+    "zone": "9a",
+    "trange": "20 to 25"
+  },
+  {
+    "zipcode": 92285,
+    "zone": "9a",
+    "trange": "20 to 25"
+  }
+]
