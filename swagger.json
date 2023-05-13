@@ -32,7 +32,7 @@
     "/flowers": {
       "get": {
         "tags": ["Flowers"],
-        "description": "",
+        "description": "Get the flowers collection",
         "produces": [
           "application/json"
         ],
@@ -66,10 +66,10 @@
                   "example": "any"
                 },
                 "type": {
-                  "example": "any"
+                  "example": "annial,perinneal"
                 },
                 "img": {
-                  "example": "any"
+                  "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
@@ -78,16 +78,16 @@
                   "example": "any"
                 },
                 "droughtTolerant": {
-                  "example": "any"
+                  "example": "yes,no"
                 },
                 "bloomTime": {
-                  "example": "any"
+                  "example": "Spring,Summer,Fall,Winter"
                 },
                 "exposure": {
-                  "example": "any"
+                  "example": "full sun, partial shade, shade"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": "92064"
                 }
               }
             }
@@ -106,7 +106,7 @@
         }
       }
     },
-    "//flowers/{id}": {
+    "/flowers/{id}": {
       "get": {
         "tags": ["Flowers"],
         "description": "",
