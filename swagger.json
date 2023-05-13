@@ -50,7 +50,7 @@
         "description": "Add a New Flower to the Flower Collection",
         "parameters": [
           {
-            "name": "body",
+            "name": "createFlower",
             "in": "body",
             "schema": {
               "type": "object",
@@ -131,7 +131,7 @@
         "description": "Update the flower collection here",
         "parameters": [
           {
-            "name": "id",
+            "name": "updateFlower",
             "in": "path",
             "required": true,
             "type": "string"
@@ -196,7 +196,7 @@
         "description": "",
         "parameters": [
           {
-            "name": "id",
+            "name": "deleteFlower",
             "in": "path",
             "required": true,
             "type": "string"
