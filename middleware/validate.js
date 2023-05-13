@@ -5,9 +5,9 @@ const validationRule = {
    firstName: 'required|string',
    lastName: 'required|string',
    address: 'required|string',
-   email: 'required|email',
+   email: 'required|string',
    zipcode: 'required|integer',
-   cellphone: 'required|integer'
+   cellphone: 'required|string'
  };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
