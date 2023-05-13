@@ -7,7 +7,7 @@ const validationRule = {
    address: 'required|string',
    email: 'required|string',
    zipcode: 'required|integer',
-   cellphone: 'required|string'
+   cellphone: 'required|integer'
  };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
