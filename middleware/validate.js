@@ -26,13 +26,13 @@ const saveFlower = (req, res, next) => {
     const validationRule = {
       flowerName: 'required|string',
       family: 'required|string',
-      type: 'required|string',
       img: 'required|string',
       location: 'required|string',
       droughtTolerant: 'required|string',
       bloomTime: 'required|string',
       exposure: 'required|string',
-      zipcode: 'required|integer'
+      zipcode: 'required|integer',
+      type: 'required|string',
     };
     validator(req.body, validationRule, {}, (err, status) => {
       if (status) {

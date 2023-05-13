@@ -33,10 +33,9 @@
       "get": {
         "tags": ["Flowers"],
         "description": "Get the flowers collection",
-        "produces": [
-          "application/json"
+        "parameters": [
+          
         ],
-        "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
@@ -49,9 +48,6 @@
       "post": {
         "tags": ["Flowers"],
         "description": "Add a New Flower to the Flower Collection",
-        "produces": [
-          "application/json"
-        ],
         "parameters": [
           {
             "name": "body",
@@ -64,9 +60,6 @@
                 },
                 "famiy": {
                   "example": "any"
-                },
-                "type": {
-                  "example": "annial,perinneal"
                 },
                 "img": {
                   "example": "img/1.jpg"
@@ -88,6 +81,9 @@
                 },
                 "zipcode": {
                   "example": 92064
+                },
+                "type": {
+                  "example": "annial,perinneal"
                 }
               }
             }

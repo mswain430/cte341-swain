@@ -29,14 +29,14 @@ const createFlower = async (req, res) => {
     const flower = {
       flowerName: req.body.flowerName,
       family: req.body.famiy,
-      type: req.body.type,
       img: req.body.img,
       desc: req.body.desc,
       location: req.body.location,
       droughtTolerant: req.body.droughtTolerant,
       bloomTime: req.body.bloomTime,
       exposure: req.body.exposure,
-      zipcode: req.body.zipcode
+      zipcode: req.body.zipcode,
+      type: req.body.type
     };
     console.log(req.body);
     const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
@@ -58,14 +58,14 @@ const updateFlower = async (req, res) => {
       $set: {
       flowerName: req.body.flowerName,
       family: req.body.family,
-      type: req.body.type,
       img: req.body.img,
       desc: req.body.desc,
       location: req.body.location,
       droughtTolerant: req.body.droughtTolerant,
       bloomTime: req.body.bloomTime,
       exposure: req.body.exposure,
-      zipcode: req.body.zipcode
+      zipcode: req.body.zipcode,
+      type: req.body.type,
     }
   };
   const response = await mongodb
