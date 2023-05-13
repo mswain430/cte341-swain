@@ -148,9 +148,6 @@
                 "family": {
                   "example": "any"
                 },
-                "type": {
-                  "example": "annual/perinneal"
-                },
                 "img": {
                   "example": "img/1.jpg"
                 },
@@ -171,6 +168,9 @@
                 },
                 "zipcode": {
                   "example": 92064
+                },
+                "type": {
+                  "example": "annual/perinneal"
                 }
               }
             }
