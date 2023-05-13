@@ -25,7 +25,7 @@ const getSingle = async (req, res) => {
 };
 
 const createFlower = async (req, res) => {
-  try {
+  //try {
     const flower = {
       flowerName: req.body.flowerName,
       family: req.body.famiy,
@@ -46,9 +46,9 @@ const createFlower = async (req, res) => {
     } else {
       res.status(500).json(response.error || 'Some error occurred while creating contact');
     }
-  } catch (err) { 
-    res.status(500).json({ message: err.message }); 
-  }
+ // } catch (err) { 
+ //   res.status(500).json({ message: err.message }); 
+ // }
  };
 
 const updateFlower = async (req, res) => {
