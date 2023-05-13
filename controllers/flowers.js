@@ -25,7 +25,7 @@ const getSingle = async (req, res) => {
 };
 
 const createFlower = async (req, res) => {
-  //try { const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
+  try {
     const flower = {
       flowerName: req.body.flowerName,
       family: req.body.famiy,
@@ -42,11 +42,13 @@ const createFlower = async (req, res) => {
     const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
     if (response.acknowledged) {
       res.status(201).json(response);
-      res.setHeader('Content-Type', 'application/json');
+      //res.setHeader('Content-Type', 'application/json');
     } else {
       res.status(500).json(response.error || 'Some error occurred while creating contact');
     }
- // } catch (err) { res.status(500).json({ message: err.message }); }
+  } catch (err) { 
+    res.status(500).json({ message: err.message }); 
+  }
  };
 
 const updateFlower = async (req, res) => {
@@ -56,16 +58,16 @@ const updateFlower = async (req, res) => {
     // be aware of updateOne if you only want to update specific fields
     const flower = {
       $set: {
-      flowerName: req.body.flowerName,
-      family: req.body.family,
-      img: req.body.img,
-      desc: req.body.desc,
-      location: req.body.location,
-      droughtTolerant: req.body.droughtTolerant,
-      bloomTime: req.body.bloomTime,
-      exposure: req.body.exposure,
-      zipcode: req.body.zipcode,
-      type: req.body.type,
+        flowerName: req.body.flowerName,
+        family: req.body.family,
+        img: req.body.img,
+        desc: req.body.desc,
+        location: req.body.location,
+        droughtTolerant: req.body.droughtTolerant,
+        bloomTime: req.body.bloomTime,
+        exposure: req.body.exposure,
+        zipcode: req.body.zipcode,
+        type: req.body.type,
     }
   };
   const response = await mongodb

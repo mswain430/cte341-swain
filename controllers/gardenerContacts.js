@@ -48,7 +48,7 @@ const createContact = async (req, res) => {
     const response = await mongodb.getDb().db('flowerdb').collection('contacts').insertOne(contact);
     if (response.acknowledged) {
       res.status(201).json(response);
-      res.setHeader('Content-Type', 'text/plain');
+     // res.setHeader('Content-Type', 'text/plain');
       } else {
         res.status(500).json(response.error || 'Some error occurred while creating contact');
       }
