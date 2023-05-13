@@ -9,7 +9,7 @@
     "droughtTolerant": "yes",
     "bloomTime": "year around",
     "exposure": "full sun",
-    "zipcode": "92128"
+    "zipcode": 92128
     },
     {
     "flowerName": "Petunia",
@@ -21,7 +21,7 @@
     "droughtTolerant": "no",
     "bloomTime": "Springtime after frost",
     "exposure": "full sun",
-    "zipcode": "92127"
+    "zipcode": 92127
      },
      {
     "flowerName": "Hydrangea",
@@ -33,7 +33,7 @@
     "droughtTolerant": "no",
     "bloomTime": "Springtime after frost",
     "exposure": "partial shade",
-    "zipcode": "92128"
+    "zipcode": 92128
     },
     {
      "flowerName": "Delosperma_cooperi",
@@ -45,7 +45,7 @@
     "droughtTolerant": "yes",
     "bloomTime": "late winter, early spring",
     "exposure": "full sun",
-    "zipcode": "92127"
+    "zipcode": 92127
      },
     {
     "flowerName": "Rose",
@@ -57,7 +57,7 @@
     "droughtTolerant": "no",
     "bloomTime": "dorment during winter",
     "exposure": "full sun",
-    "zipcode": "92064"
+    "zipcode": 92064
     },    {
      "flowerName": "Begonia",
     "family": "Begonia",
@@ -68,7 +68,7 @@
     "droughtTolerant": "no",
     "bloomTime": "avoid freezing temps",
     "exposure": "full sun or partial shade",
-    "zipcode": "92064"
+    "zipcode": 92064
     },
     {
      "flowerName": "Antirrhinum",
@@ -80,7 +80,7 @@
     "droughtTolerant": "no",
     "bloomTime": "Springtime",
     "exposure": "full sun or partial shade",
-    "zipcode": "92064"
+    "zipcode": 92064
     },
     {
     "flowerName": "Rose",
@@ -92,7 +92,7 @@
     "droughtTolerant": "no",
     "bloomTime": "year around",
     "exposure": "full sun",
-    "zipcode": "92064"
+    "zipcode": 92064
      },
      {
      "flowerName": "Succulent",
@@ -104,7 +104,7 @@
     "droughtTolerant": "yes",
     "bloomTime": "year around",
     "exposure": "full sun/partial shade",
-    "zipcode": "92064"
+    "zipcode": 92064
     },
     {
     "flowerName": "Geranium",
@@ -116,7 +116,7 @@
     "droughtTolerant": "yes",
     "bloomTime": "year around",
     "exposure": "full sun",
-    "zipcode": "92064"
+    "zipcode": 92064
      },
      {
     "flowerName": "Delosperma_cooperi",
@@ -128,7 +128,7 @@
     "droughtTolerant": "yes",
     "bloomTime": "Early Spring",
     "exposure": "full sun",
-    "zipcode": "92064"
+    "zipcode": 92064
     },
     {
     "flowerName": "Osteospermum",
@@ -140,6 +140,6 @@
     "droughtTolerant": "yes",
     "bloomTime": "Early Spring",
     "exposure": "full sun",
-    "zipcode": "92064"
+    "zipcode": 92064
      }
 ]
