@@ -7,7 +7,7 @@ const doc = {
     title: "Millies Backyard Flowers",
     description: "Garden Club Flowers API"
   },
-  host: "localhost:8080",
+  host: "swain341-test.onrender.com",
   basePath: "/",
   schemes: ["https"],
   tags: [

@@ -4,10 +4,10 @@ const saveContact = (req, res, next) => {
 const validationRule = {
    firstName: 'required|string',
    lastName: 'required|string',
-   address: 'string',
+   address: 'required|string',
    email: 'required|email',
-   zipcode: 'required|number',
-   cellphone: 'number'
+   zipcode: 'required|integer',
+   cellphone: 'required|integer'
  };
   validator(req.body, validationRule, {}, (err, status) => {
     if (!status) {
@@ -25,14 +25,14 @@ const validationRule = {
 const saveFlower = (req, res, next) => {
     const validationRule = {
       flowerName: 'required|string',
-      family: 'string',
-      type: 'string',
+      family: 'required|string',
+      type: 'required|string',
       img: 'required|string',
       location: 'required|string',
-      droughtTolerant: 'string',
-      bloomTime: 'string',
-      exposure: 'string',
-      zipcode: 'int'
+      droughtTolerant: 'required|string',
+      bloomTime: 'required|string',
+      exposure: 'required|string',
+      zipcode: 'required|integer'
     };
     validator(req.body, validationRule, {}, (err, status) => {
       if (status) {
