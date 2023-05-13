@@ -135,7 +135,7 @@
       },
       "put": {
         "tags": ["Flowers"],
-        "description": "",
+        "description": "Update the flower collection here",
         "parameters": [
           {
             "name": "id",
@@ -144,8 +144,6 @@
             "type": "string"
           },
           {
-            "name": "body",
-            "in": "body",
             "schema": {
               "type": "object",
               "properties": {
