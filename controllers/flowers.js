@@ -7,7 +7,7 @@ const getAll = async (req, res) => {
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(lists);
-  })
+  });
   } catch (err) {
     res.status(500).json({message: err.message});
   }
