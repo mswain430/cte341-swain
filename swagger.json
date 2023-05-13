@@ -87,7 +87,7 @@
                   "example": "full sun, partial shade, shade"
                 },
                 "zipcode": {
-                  "example": "92064"
+                  "example": 92064
                 }
               }
             }
@@ -141,6 +141,8 @@
             "type": "string"
           },
           {
+            "name": "body",
+            "in": "body",
             "schema": {
               "type": "object",
               "properties": {
@@ -172,7 +174,7 @@
                   "example": "full sun/partial shade/shade"
                 },
                 "zipcode": {
-                  "example": "92064"
+                  "example": 92064
                 }
               }
             }
