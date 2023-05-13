@@ -34,7 +34,7 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
-  try { const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
+  try { 
     const contact = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -52,7 +52,9 @@ const createContact = async (req, res) => {
       } else {
         res.status(500).json(response.error || 'Some error occurred while creating contact');
       }
-  } catch (err) { res.status(500).json({ message: err.message }); }
+  } catch (err) {
+    res.status(500).json(err); 
+  }
 };
 
 const updateContact = async (req, res) => {
