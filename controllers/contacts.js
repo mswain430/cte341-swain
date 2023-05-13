@@ -38,7 +38,7 @@ const createContact = async (req, res) => {
     lastName: req.body.lastName,
     email: req.body.email,
     favoriteColor: req.body.favoriteColor,
-    birdthday: req.body.birthday,
+    birthday: req.body.birthday,
     cellphone: req.body.cellphone,
     zipcode: req.body.zipcode
   };

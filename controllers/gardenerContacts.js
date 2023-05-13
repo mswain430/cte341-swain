@@ -40,9 +40,9 @@ const createContact = async (req, res) => {
     email: req.body.email,
     zipcode: req.body.zipcode,
     cellphone: req.body.cellphone,
-    zone: req.body.zone
   };
   console.log(req.body);
+
   const response = await mongodb.getDb().db('flowerdb').collection('contacts').insertOne(contact);
   if (response.acknowledged) {
     res.status(201).json(response);
@@ -56,8 +56,8 @@ const createContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
-  try {
-    if(!ObjectId.isValid(req.params.id)){
+  // try {
+    if (!ObjectId.isValid(req.params.id)) {
     res.status(400).json('Must use a valid contact id to fine a flower instance')
   }
     const userId = new ObjectId(req.params.id);
@@ -69,7 +69,6 @@ const updateContact = async (req, res) => {
       email: req.body.email,
       zipcode: req.body.zipcode,
       cellphone: req.body.cellphone,
-      zone: req.body.zone
     };
     const response = await mongodb
       .getDb()
@@ -82,16 +81,16 @@ const updateContact = async (req, res) => {
       } else {
           res.status(500).json(response.error || 'Some error occurred while updating the contact.');
         }
-  } catch (err) {
-        res.status(500).json({err})
-   }
+ // } catch (err) {
+ //       res.status(500).json({err})
+ //  }
 };
 
 const deleteContact = async (req, res) => {
-  try {
     if(!ObjectId.isValid(req.params.id)){
       res.status(400).json('Must use a valid contact id to fine a flower instance')
     }
+    try {
     const userId = new ObjectId(req.params.id);
     const response = await mongodb
       .getDb()
