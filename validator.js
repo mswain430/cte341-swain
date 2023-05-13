@@ -17,12 +17,16 @@ const userValidationRules = () => {
    // body('password').isLength({ min: 5 }),
     body('flowerName').isString(),
     body('family').isString(),
-    body('type').isString(),
-    body('img').isURL(),
+    body('img').isString(),
+    body('desc').isString(),
     body('location').isString(),
+    body('zone').isString(),
     body('droughtTolerant').isString(),
     body('bloomTime').isString(),
     body('exposure').isString(),
+    body('zipcode').isInteger(),
+    body('type').isString(),
+  
   ]
 }
 

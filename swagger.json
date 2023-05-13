@@ -323,24 +323,12 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
-                  "example": "any"
-                },
-                "lastName": {
-                  "example": "any"
-                },
-                "address": {
-                  "example": "any"
-                },
-                "email": {
-                  "example": "test@tester.com"
-                },
-                "zipcode": {
-                  "example": 92064
-                },
-                "cellphone": {
-                  "example": 8585555555
-                }
+                "firstName": { "example": "any"},
+                "lastName": { "example": "any"},
+                "address": { "example": "any" },
+                "email": { "example": "test@tester.com" },
+                "zipcode": { "example": 92064 },
+                "cellphone": { "example": 8585555555 }
               }
             }
           }
