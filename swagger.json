@@ -252,16 +252,16 @@
                   "example": "any"
                 },
                 "address": {
-                  "example": "any"
+                  "example": "1234 AnyStreet "
                 },
                 "email": {
-                  "example": "any"
+                  "example": "mm@gmail.com"
                 },
                 "zipcode": {
-                  "example": "any"
+                  "example": 92064
                 },
                 "cellphone": {
-                  "example": "any"
+                  "example": 8583334444
                 }
               }
             }
@@ -336,10 +336,10 @@
                   "example": "test@tester.com"
                 },
                 "zipcode": {
-                  "example": "92064"
+                  "example": 92064
                 },
                 "cellphone": {
-                  "example": "8585555555"
+                  "example": 8585555555
                 }
               }
             }
