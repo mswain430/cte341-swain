@@ -48,7 +48,7 @@
       },
       "post": {
         "tags": ["Flowers"],
-        "description": "Add a New Flower",
+        "description": "Add a New Flower to the Flower Collection",
         "produces": [
           "application/json"
         ],
@@ -109,10 +109,7 @@
     "/flowers/{id}": {
       "get": {
         "tags": ["Flowers"],
-        "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "description": "Get a single flower based on id from flowers collection",
         "parameters": [
           {
             "name": "id",
