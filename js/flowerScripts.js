@@ -19,6 +19,7 @@ function displayAllData(data) {
   displayflowerDroughtTolerant(data.droughtTolerant);
   displayflowerBloomTime(data.bloomTime);
   displayflowerExposure(data.exposure);
+  displayflowerExposure(data.type);
 }
   
 function displayflowerName(data) {
@@ -33,7 +34,7 @@ function displayflowerFamily(data) {
 
 function displayflowerImg() {
   let flowerImg = document.getElementById('img');
-  flowerImg.innerHTML = `<img src="{$img}" alt="{$flowerName}" `;
+  flowerImg.innerHTML = `<img src="{$img}" alt=""> `
 } 
 
 function displayflowerDesc(data) {
@@ -60,5 +61,13 @@ function displayflowerExposure(data) {
   let exposure = document.getElementById('exposure');
   exposure.innerHTML = data;
 }
-  
+function displayflowerZipcode(data) {
+  let zipcode = document.getElementById('zipcode');
+  bloomTime.innerHTML = data;
+}
+
+function displayflowerExposure(data) {
+  let type = document.getElementById('type');
+  type.innerHTML = data;
+}  
 getData();
