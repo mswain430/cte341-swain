@@ -58,20 +58,14 @@
                 "flowerName": {
                   "example": "any"
                 },
-                "famiy": {
-                  "example": "any"
-                },
                 "img": {
                   "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
-                "location": {
+                "zone": { 
                   "example": "any"
-                },
-                "droughtTolerant": {
-                  "example": "yes,no"
                 },
                 "bloomTime": {
                   "example": "Spring,Summer,Fall,Winter"
@@ -145,20 +139,14 @@
                 "flowerName": {
                   "example": "any"
                 },
-                "family": {
-                  "example": "any"
-                },
                 "img": {
                   "example": "img/1.jpg"
                 },
                 "desc": {
                   "example": "any"
                 },
-                "location": {
-                  "example": "San Diego, CA"
-                },
-                "droughtTolerant": {
-                  "example": "yes/no"
+                "zone": {
+                  "example": "9a"
                 },
                 "bloomTime": {
                   "example": "Spring/Summer/Fall/Winter"
