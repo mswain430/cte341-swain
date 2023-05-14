@@ -10,7 +10,7 @@ routes.get('contacts:id', contactsController.getSingle);
 
 routes.post('/', validation.saveContact, contactsController.createContact);
 
-routes.put('/:id', contactsController.updateContact);
+routes.put('/:id', validation.saveContact, contactsController.updateContact);
 
 routes.delete('/:id', contactsController.deleteContact);
 
