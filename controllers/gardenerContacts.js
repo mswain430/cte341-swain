@@ -2,8 +2,15 @@ const express = require('express').Router();
 //const bodyParser = require('body-parser');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
-
-const getGardenerController = require("../controllers/gardenerContacts")
+const Joi = require('joi');
+const schema = Joi.object({ 
+  firstName: Joi.string().required().empty(),
+  lastName: Joi.string().required().empty(),
+  email: Joi.string().required().empty(), 
+  zipcode: Joi.int32().required().empty(), 
+  cellphone: Joi.int64().required().empty(), 
+ });
+//const getGardenerController = require("../controllers/gardenerContacts")
 
 const getAll = async (req, res) => {
   try {
@@ -35,6 +42,7 @@ const getSingle = async (req, res) => {
 
 const createContact = async (req, res) => {
   try { 
+    const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
     const contact = {
       firstName: req.body.firstName,
       lastName: req.body.lastName,
@@ -44,7 +52,6 @@ const createContact = async (req, res) => {
       cellphone: req.body.cellphone,
     };
     console.log(req.body);
-
     const response = await mongodb.getDb().db('flowerdb').collection('contacts').insertOne(contact);
     if (response.acknowledged) {
       res.status(201).json(response);
@@ -52,9 +59,7 @@ const createContact = async (req, res) => {
       } else {
         res.status(500).json(response.error || 'Some error occurred while creating contact');
       }
-  } catch (err) {
-    res.status(500).json(err); 
-  }
+    } catch (err) { res.status(500).json({ message: err.message }); }
 };
 
 const updateContact = async (req, res) => {

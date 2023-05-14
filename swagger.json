@@ -33,9 +33,7 @@
       "get": {
         "tags": ["Flowers"],
         "description": "Get the flowers collection",
-        "parameters": [
- 
-        ],
+        "parameters": [ ],
         "responses": {
           "200": {
             "description": "OK"
