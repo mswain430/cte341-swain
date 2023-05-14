@@ -18,11 +18,10 @@ const doc = {
     {
       "name": "Contacts",
       "description": "Garden Club Memberships"
-    },
-    
+    }, 
   ],
   paths: {
-    "/flowers/": {
+    "/flowers/{flowerId}": {
       get: {
         tags: ["flowers"],
         summary: "Add flower information",
@@ -30,9 +29,9 @@ const doc = {
         produces: ["application/json"],
         parameters: [
           {
-            name: "flowerName",
+            name: "flowerId",
             in: "path",
-            description: "flowerName required",
+            description: "flowerId required when getting flower information",
             type: "string"
           }
         ],

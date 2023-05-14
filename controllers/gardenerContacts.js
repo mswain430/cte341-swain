@@ -1,8 +1,9 @@
-//const express = require('express');
+const express = require('express').Router();
 //const bodyParser = require('body-parser');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
+const getGardenerController = require("../controllers/gardenerContacts")
 
 const getAll = async (req, res) => {
   try {
@@ -18,9 +19,8 @@ const getAll = async (req, res) => {
 
 const getSingle = async (req, res) => {
   try {
-    if(!ObjectId.isValid(req.params.id)){
-      res.status(400).json('Must use a valid contact id to fine a flower instance')
-    }
+    if(!ObjectId.isValid(req.params.id)) {
+      res.status(400).json('Must use a valid contact id to fine a flower instance') }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db('flowerdb').collection('contacts').find({ _id: userId });
   result.toArray().then((lists) => {
@@ -71,12 +71,8 @@ const updateContact = async (req, res) => {
         zipcode: req.body.zipcode,
         cellphone: req.body.cellphone,
       }
-    }
-     const response = await mongodb
-      .getDb()
-      .db('flowerdb')
-      .collection('contacts')
-      .replaceOne({ _id: userId }, contact);
+    };
+     const response = await mongodb.getDb().db('flowerdb').collection('contacts').updateOne({ _id: userId }, contact);
       console.log(response);
       if (response.modifiedCount > 0) {
         res.status(204).send();
@@ -90,11 +86,7 @@ const deleteContact = async (req, res) => {
     res.status(400).json('Must use a valid contact id to fine a flower instance') 
     }
     const userId = new ObjectId(req.params.id);
-    const response = await mongodb
-      .getDb()
-      .db('flowerdb')
-      .collection('contacts')
-      .deleteOne({ _id: userId }, true);
+    const response = await mongodb.getDb().db('flowerdb').collection('contacts').deleteOne({ _id: userId }, true);
     console.log(response);
     if (response.deletedCount > 0) {
       res.status(204).send();

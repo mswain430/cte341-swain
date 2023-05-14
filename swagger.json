@@ -34,7 +34,7 @@
         "tags": ["Flowers"],
         "description": "Get the flowers collection",
         "parameters": [
-          
+ 
         ],
         "responses": {
           "200": {
