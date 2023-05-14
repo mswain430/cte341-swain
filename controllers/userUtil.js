@@ -2,7 +2,7 @@ const db = require('../models');
 const User = db.user;
 const passwordUtil = require('../util/passwordComplexityCheck');
 
-exports.create = (req, res) => {
+exports.createUser = (req, res) => {
   // Validate request
   try {
     if (!req.body.username || !req.body.password) {
