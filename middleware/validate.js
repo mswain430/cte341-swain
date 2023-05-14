@@ -26,7 +26,7 @@ const saveFlower = (req, res, next) => {
     const validationRule = {
       flowerName: 'required|string',
       img: 'string',
-      zon: 'required|string',
+      zone: 'required|string',
       bloomTime: 'required|string',
       exposure: 'required|string',
       zipcode: 'required|integer',
