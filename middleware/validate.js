@@ -25,11 +25,9 @@ const validationRule = {
 const saveFlower = (req, res, next) => {
     const validationRule = {
       flowerName: 'required|string',
-      family: 'string',
       img: 'string',
-      location: 'required|string',
-      droughtTolerant: 'string',
-      bloomTime: 'string',
+      zon: 'required|string',
+      bloomTime: 'required|string',
       exposure: 'required|string',
       zipcode: 'required|integer',
       type: 'required|string',

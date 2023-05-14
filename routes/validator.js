@@ -6,14 +6,11 @@ const userValidationRules = () => {
     // password must be at least 5 chars long
    // body('password').isLength({ min: 5 }),
     body('flowerName').isString(),
-    body('family').isString(),
     body('type').isString(),
-    body('img').isURL(),
-    body('location').isString(),
-    body('droughtTolerant').isBoolean(),
+    body('img').isString(),
     body('bloomTime').isString(),
     body('exposure').isString(),
-    body('zipcode').isInt().isLength({max: 5})
+    body('zipcode').isInt().isLength({max: 9})
   ]
 }
 //const { userValidationRules, validate } = require('./validator.js')

@@ -9,9 +9,9 @@ routes.get('/', flowerController.getAll);
 
 routes.get('/:id', flowerController.getSingle); 
 
-routes.post('/',  /*validation.saveFlower,*/ flowerController.createFlower);
+routes.post('/',  validation.saveFlower, flowerController.createFlower);
 
-routes.put('/:id', /*validation.saveFlower,*/ flowerController.updateFlower);
+routes.put('/:id', validation.saveFlower, flowerController.updateFlower);
 
 routes.delete('/:id', flowerController.deleteFlower);
 
