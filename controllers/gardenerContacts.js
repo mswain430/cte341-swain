@@ -7,8 +7,8 @@ const schema = Joi.object({
   firstName: Joi.string().required().empty(),
   lastName: Joi.string().required().empty(),
   email: Joi.string().required().empty(), 
-  zipcode: Joi.int32().required().empty(), 
-  cellphone: Joi.int64().required().empty(), 
+  zipcode: Joi.number().required().empty(), 
+  cellphone: Joi.number().required().empty(), 
  });
 //const getGardenerController = require("../controllers/gardenerContacts")
 

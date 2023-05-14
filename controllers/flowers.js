@@ -8,7 +8,7 @@ const schema = Joi.object({
   zone: Joi.string().required().empty(), 
   bloomTime: Joi.string().required().empty(), 
   exposure: Joi.string().required().empty(), 
-  zipcode: Joi.int32().required().empty(),
+  zipcode: Joi.number().required().empty(),
   type: Joi.string().required().empty()
  });
 
