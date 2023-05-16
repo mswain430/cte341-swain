@@ -2,7 +2,8 @@ const express = require('express');
 const routes = express.Router();
 const passport = require("passport");
 
-routes.use('/', require('./swagger'))
+routes.use('/', require('./swagger'));
+
 routes.use('/user', require('./user'));
 //routes.use('/contacts', require('./contacts'));
 //routes.use('temples', require('./temples'));  ***** problem child
