@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const passport = require('passport');
@@ -7,7 +8,7 @@ const GitHubStrategy = require('passport-github2').Strategy;
 const cors = require('cors');
 
 const port = process.env.PORT || 8080;
-const app = express();
+
 
 app
   .use(bodyParser.json()) 
