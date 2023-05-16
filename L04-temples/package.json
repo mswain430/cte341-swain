@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mswain430/cte341-swain/temple-api.git"
+    "url": "git+https://github.com/mswain430/cte341-swain/temple-api"
   },
   "author": "Millie Swain",
   "license": "ISC",

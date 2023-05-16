@@ -8,6 +8,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-openid-connect": "^2.16.0",
     "express-session": "^1.17.3",
     "express-validator": "^7.0.1",
     "joi": "^17.9.2",
@@ -40,7 +41,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mswain430/CSE341-swain"
-    
   },
   "author": "Millie Swain",
   "bugs": {

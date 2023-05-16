@@ -1,0 +1,221 @@
+### 
+
+//GET http://localhost:8080/professional
+//LOCALHOST
+
+### 
+
+//GET http://localhost:8080/contacts
+
+###
+
+GET http://localhost:8080/userInfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmRoOGVyNGV2ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJyb3VnaE5jb2Fyc2UiLCJpYXQiOjE2NDUxMTY0NjN9.o4Ju-74cVywwoXqJ3G1Fw5S8ehqINEm2nA5b0j2WqoE
+
+###
+
+POST http://localhost:8080/login Content-Type: application/json
+
+{
+"email": "sandh8er4ever@gmail.com",
+"password": "roughNcoarse"
+}
+
+###
+
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "sandh8er4ever@gmail.com",
+	"password": "roughNcoarse"
+}
+
+### 
+
+GET http://localhost:8080/flowers
+
+###
+
+POST http://localhost:8080/flowers HTTP/1.1
+Content-Type: application/json
+
+{
+   "flowerName": "Ivy Geranium" ,
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/1.jpg",
+    "desc": "Care for ivy geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+POST http://localhost:8080/flowers HTTP/1.1
+Content-Type: application/json
+
+{
+   "flowerName": "Geranium" ,
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/18.jpg",
+    "desc": "Care for geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+POST http://localhost:8080/flowers HTTP/1.1
+
+{
+   "flowerName": "Martha Washington Geranium",
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/17.jpg",
+    "desc": "Care for geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun"
+}
+
+### 
+
+PUT http://localhost:8080/flowers/645ab515e455fddacdaa6c02  HTTP/1.1
+Content-Type: application/json
+
+{
+    "flowerName": "Succulent",
+    "family": "Alismatales",
+    "img": "img/pic17.webp",
+    "desc": "Succulents have the ability to thrive on limited water sources, such as mist and dew.(wiki)",
+    "location": "San Diego, California",
+    "zone": "9",
+    "droughtTolerant": "yes",
+    "bloomTime": "year around",
+    "exposure": "partial shade"
+  }
+
+### 
+
+//POST http://localhost:8080/contacts HTTP/1.1
+//Content-Type:application/json
+
+//{
+//"firstName":"Ashley", 
+//"lastName":"Weaver", 
+//"email":"aWeaver@test.com", 
+//"favoriteColor":"Brown", 
+//"birthday":"06/19/2000"
+//}
+
+###
+
+//POST http://localhost:8080/contacts HTTP/1.1
+//Content-Type: application/json
+
+//{
+//"firstName":"Sarah", 
+//"lastName":"Birch", 
+//"email":"test@gmail.com", 
+//"favoriteColor":"Green", 
+//"birthday":"12/12/20"
+//} 
+
+### 
+
+//PUT http://localhost:8080/contacts/64473ef593c8ccb1f0dd16e3 HTTP/1.1
+//content-type: application/json
+
+//{
+//"firstName":"Samantha", 
+//"lastName":"Buchard", 
+//"email":"test@gmail.com", 
+//"favoriteColor":"blue-violet", 
+//"birthday":"1/12/20"
+//} 
+
+### //DELETE contact 
+
+//DELETE http://localhost:8080/contacts/6456d9ff2a6aa84b616b2aec HTTP/1.1
+
+###
+
+//GET http://localhost:8080/contacts/64473cf593c8ccb1f0dd16df
+
+### 
+
+//GET http://localhost:8080/contacts/64473e4693c8ccb1f0dd16e0 
+ 
+### 
+
+// PRODUCTION Deploy 
+### 
+
+GET https://swain341-test.onrender.com
+
+###
+
+GET https://swain341-test.onrender.com/flowers HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST https://swain341-test.onrender.com/flowers HTTP/1.1
+Content-Type: application/json
+
+{
+   "flowerName": "Martha Washington Geranium",
+    "family": "Geraniaceae",
+    "type": "perennial",
+    "img" : "img/17.jpg",
+    "desc": "Care for geraniums is easy if you maintain proper watering practices. Watering ivy leaf geranium must be consistent. Moderate soil moisture levels, not too much and not too little,
+Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy Geraniums https://www.gardeningknowhow.com/ornamental/flowers/geranium/growing-ivy-geraniums.htm",
+    "location": "San Diego, CA",
+    "droughtTolerant": "no",
+    "bloomTime": "year around",
+    "exposure": "full sun",
+    "zipcode": "92064"
+}
+
+###
+
+PUT https://swain341-test.onrender.com/flowers/64596ab0550959d7b4b0ebc1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": "64596ab0550959d7b4b0ebc1",
+    "flowerName": "Succulent",
+    "family": "Succulent",
+    "img": "img/pic17.webp",
+    "desc": "Succulents have the ability to thrive on limited water sources, such as mist and dew.(wiki)",
+    "location": "San Diego, California",
+    "zone": "9",
+    "droughtTolerant": "yes",
+    "bloomTime": "year around",
+    "exposure": "partial shade"
+  }
+
+###
+
+DELETE https://swain341-test.onrender.com/flowers/645ab176c0b829b8d7468604 HTTP/1.1
+Content-Type: application/json
+
+
+### 
+//GET https://swain341-test.onrender.com/professional
+
+###
+
+GET https://swain341-test.onrender.com/temples
+Content-Type: application/json
+
