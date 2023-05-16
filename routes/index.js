@@ -4,13 +4,14 @@ const passport = require("passport");
 
 routes.use('/', require('./swagger'));
 
-routes.use('/user', require('./user'));
 //routes.use('/contacts', require('./contacts'));
 //routes.use('temples', require('./temples'));  ***** problem child
+
 routes.use('/flowers', require('./flowers'));
 routes.use('/contacts', require('./gardenerContacts'));
+//routes.use('/user', require('./user'));
 
-routes.get('/login', passport.authentication('github'), (req, res) => {});
+routes.get('/login', passport.Authenticator('github'), (req, res) => {});
 
 routes.get('logout', function(req, res, next) {
     req.logout(function(err) {
