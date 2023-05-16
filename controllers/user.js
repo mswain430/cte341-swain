@@ -1,8 +1,8 @@
-const db = require('../models');
+const db = require('../model');
 const User = db.user;
 
 
-exports.create = (req, res) => {
+exports.createUser = (req, res) => {
   // Validate request
   if (!req.body.username || !req.body.password) {
     res.status(400).send({ message: 'Content can not be empty!' });
