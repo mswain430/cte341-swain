@@ -36,7 +36,7 @@ const getSingle = async (req, res) => {
 };
 
 const createFlower = async (req, res) => {
-  try { const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
+ // try { const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
     const flower = {
       flowerName: req.body.flowerName,
       img: req.body.img,
@@ -48,15 +48,22 @@ const createFlower = async (req, res) => {
       type: req.body.type
     };
     console.log(req.body);
-    const response = await mongodb.getDb().db('flowerdb').collection('flowers').insertOne(flower);
-    if (response.acknowledged) {
-      res.status(201).json(response);
-      //res.setHeader('Content-Type', 'text/plain');
-    } else {
+  
+    try {
+      const response = await mongodb 
+        .getDb()
+        .db('flowerdb')
+        .collection('flowers')
+        .insertOne(flower);
+      if (response.acknowledged) {
+        res.status(201).json(response);
+        //res.setHeader('Content-Type', 'text/plain');
+      } else {
       res.status(500).json(response.error || 'Some error occurred while creating contact');
-    }
-  } catch (err) { res.status(500).json({ message: err.message }); }
- };
+      }
+    } catch (err) { res.status(500).json({ message: err.message }); 
+  }
+};
 
 const updateFlower = async (req, res) => {
   if (!ObjectId.isValid(req.params.id)) {
