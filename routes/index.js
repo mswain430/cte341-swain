@@ -7,8 +7,8 @@ routes.use('/', require('./swagger'));
 //routes.use('/contacts', require('./contacts'));
 //routes.use('temples', require('./temples'));  ***** problem child
 //routes.use('/user', require('./user'));
-routes.use('/flowers', require('./flowers'));
-routes.use('/contacts', require('./gardenerContacts'));
+//routes.use('/flowers', require('./flowers'));
+//routes.use('/contacts', require('./gardenerContacts'));
 
 
 routes.get('/login', passport.Authenticator('github'), (req, res) => {});

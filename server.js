@@ -12,6 +12,7 @@ const app = express();
 
 app
   .use(bodyParser.json()) 
+  .use(bodyParser.urlencoded({ extended: false }))
   .use(session({
     secret: "secret",
     resave: false,
@@ -22,21 +23,17 @@ app
   // init pasport on every route call
   .use(passport.session())
   // allow passport to use "express-session"
-
-  .use(bodyParser.urlencoded({ extended: false }))
   .use((req, res, next) => {
    // req = console.log (`getting headers`);
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key, Authorization');
     res.setHeader('Content-Type', 'application/json');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, UPDATE, PATCH');
     next()
   })
-  app.use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
-  app.use(cors({ 
-    origin: '*'
-    }))
-  app.use("/", require("./routes/index.js"));  
+  .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
+  .use(cors({ origin: '*' }))
+  .use("/", require("./routes/index.js"));  
 
  /* process.on('uncaughtException', (err, origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
