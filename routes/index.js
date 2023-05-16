@@ -9,8 +9,8 @@ routes.use('/', require('./swagger'));
 //routes.use('/user', require('./user'));
 routes.use('/flowers', require('./flowers'));
 routes.use('/contacts', require('./gardenerContacts'));
-routes.use('courses', require('./courses'))
-routes.use('instructors', require('./instructors'))
+//routes.use('courses', require('./courses'));
+//routes.use('instructors', require('./instructors'));
 
 routes.get('/login', passport.Authenticator('github'), (req, res) => {});
 

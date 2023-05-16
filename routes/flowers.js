@@ -9,9 +9,9 @@ routes.get('/', flowerController.getAll);
 
 routes.get('/:id', flowerController.getSingle); 
 
-routes.post('/',  isAuthenticated, validation.saveFlower, flowerController.createFlower);
+routes.post('/',  isAuthenticated, flowerController.createFlower);
 
-routes.put('/:id', isAuthenticated, validation.saveFlower, flowerController.updateFlower);
+routes.put('/:id', isAuthenticated, /*validation.saveFlower,*/ flowerController.updateFlower);
 
 routes.delete('/:id', isAuthenticated, flowerController.deleteFlower);
 

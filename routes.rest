@@ -1,20 +1,20 @@
 ### 
 
-//GET http://localhost:8080/professional
+//GET http://localhost:3000/professional
 //LOCALHOST
 
 ### 
 
-//GET http://localhost:8080/contacts
+//GET http://localhost:3000/contacts
 
 ###
 
-GET http://localhost:8080/userInfo
+GET http://localhost:3000/userInfo
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbmRoOGVyNGV2ZXJAZ21haWwuY29tIiwicGFzc3dvcmQiOiJyb3VnaE5jb2Fyc2UiLCJpYXQiOjE2NDUxMTY0NjN9.o4Ju-74cVywwoXqJ3G1Fw5S8ehqINEm2nA5b0j2WqoE
 
 ###
 
-POST http://localhost:8080/login Content-Type: application/json
+POST http://localhost:3000/login Content-Type: application/json
 
 {
 "email": "sandh8er4ever@gmail.com",
@@ -23,7 +23,7 @@ POST http://localhost:8080/login Content-Type: application/json
 
 ###
 
-POST http://localhost:8080/login
+POST http://localhost:3000/login
 Content-Type: application/json
 
 {
@@ -33,11 +33,11 @@ Content-Type: application/json
 
 ### 
 
-GET http://localhost:8080/flowers
+GET http://localhost:3000/flowers
 
 ###
 
-POST http://localhost:8080/flowers HTTP/1.1
+POST http://localhost:3000/flowers HTTP/1.1
 Content-Type: application/json
 
 {
@@ -55,7 +55,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-POST http://localhost:8080/flowers HTTP/1.1
+POST http://localhost:3000/flowers HTTP/1.1
 Content-Type: application/json
 
 {
@@ -73,7 +73,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-POST http://localhost:8080/flowers HTTP/1.1
+POST http://localhost:3000/flowers HTTP/1.1
 
 {
    "flowerName": "Martha Washington Geranium",
@@ -90,7 +90,7 @@ Read more at Gardening Know How: Ivy Geranium Care, How To Grow And Care For Ivy
 
 ### 
 
-PUT http://localhost:8080/flowers/645ab515e455fddacdaa6c02  HTTP/1.1
+PUT http://localhost:3000/flowers/645ab515e455fddacdaa6c02  HTTP/1.1
 Content-Type: application/json
 
 {

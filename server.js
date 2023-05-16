@@ -33,7 +33,7 @@ app
   })
   .use(cors({ methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']}))
   .use(cors({ origin: '*' }))
-  .use("/", require("./routes/index.js"));  
+  app.use('/', require('./routes').default);  
 
  /* process.on('uncaughtException', (err, origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
