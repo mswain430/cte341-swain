@@ -38,14 +38,14 @@ const getSingle = async (req, res) => {
 const createFlower = async (req, res) => {
  // try { const { error } = schema.validate(req.body); if (error) { return res.status(400).json({ error: error.details[0].message }); }
     const flower = {
-      flowerName: req.body.flowerName,
-      img: req.body.img,
-      desc: req.body.desc,
-      zone: req.body.zone,
-      bloomTime: req.body.bloomTime,
-      exposure: req.body.exposure,
-      zipcode: req.body.zipcode,
-      type: req.body.type
+      flowerName: flowerName,
+      img: img,
+      desc: desc,
+      zone: zone,
+      bloomTime: bloomTime,
+      exposure: exposure,
+      zipcode: zipcode,
+      type: type
     };
     console.log(req.body);
   
