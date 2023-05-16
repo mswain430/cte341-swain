@@ -5,7 +5,7 @@ const userController = require('../controllers/user');
 
 routes.get('/', userController.getAll);
 
-routes.get('/', userController.getUser);
+routes.get('/:username', userController.getUser);
 
 routes.post('/', userController.createUser);
 
