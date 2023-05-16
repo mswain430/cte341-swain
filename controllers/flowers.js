@@ -47,8 +47,7 @@ const createFlower = async (req, res) => {
       zipcode: zipcode,
       type: type
     };
-    console.log(req.body);
-  
+      
     try {
       const response = await mongodb 
         .getDb()
@@ -56,10 +55,11 @@ const createFlower = async (req, res) => {
         .collection('flowers')
         .insertOne(flower);
       if (response.acknowledged) {
+        console.log(response.insertedId);
         res.status(201).json(response);
         //res.setHeader('Content-Type', 'text/plain');
       } else {
-      res.status(500).json(response.error || 'Some error occurred while creating contact');
+          res.status(500).json(response.error || 'Some error occurred while creating contact');
       }
     } catch (err) { res.status(500).json({ message: err.message }); 
   }
