@@ -1,10 +1,10 @@
 const routes = require('express').Router();
 
-const getInstructorController = require("../controllers/gardenerContacts");
+const getInstructorController = require("../controllers/instructors");
 
 //const auth = require('../middleware/authenticate.js);
 
-routes.get("/", getInstructorController = require("../controllers/instructors");
+routes.get("/", getInstructorController.getAllInstructors);
 routes.get("/:id", getInstructorController.getInstructor);
 //routes.post("/", auth.isAuthenticated, validate.newInstructor.getInstructorsController.postInstructor);
 //routes.put("/:id", auth.isAuthenticated, validate.newInstructor, getInstructorsController.putInstructor);

@@ -2,7 +2,7 @@ const express = require('express');
 const routes = express.Router();
 
 const contactsController = require('../controllers/gardenerContacts');
-const validation = require('../middleware/validate')
+//const validation = require('../middleware/validate')
 const {isAuthenticated} = require("../middleware/authenticate")
 
 //routes.get('/', contactsController.getData);
